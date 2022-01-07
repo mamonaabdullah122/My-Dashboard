@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<!-- saved from url=(0113)https://www.vectorstock.com/royalty-free-vector/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060 -->
+<html lang="en" class="webp js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<link rel="preconnect" href="https://cdn.vectorstock.com/">
+	<link rel="dns-prefetch" href="https://cdn.vectorstock.com/">
+	<meta name="theme-color" content="#101122">
+	<script type="text/javascript" src="./12_files/02e09611df"></script><script src="./12_files/nr-1212.min.js"></script><script type="text/javascript" async="" src="./12_files/f.txt" nonce="VUJJs6TsA3uHkSAMmnXUAUqJ2jVbEK/UY39XxHnUBjI="></script><script type="text/javascript" async="" src="./12_files/analytics.js" nonce="VUJJs6TsA3uHkSAMmnXUAUqJ2jVbEK/UY39XxHnUBjI="></script><script type="text/javascript" async="" src="./12_files/analytics.js" nonce="VUJJs6TsA3uHkSAMmnXUAUqJ2jVbEK/UY39XxHnUBjI="></script><script type="text/javascript" async="" src="./12_files/js" nonce="VUJJs6TsA3uHkSAMmnXUAUqJ2jVbEK/UY39XxHnUBjI="></script><script type="text/javascript" async="" src="./12_files/js(1)" nonce="VUJJs6TsA3uHkSAMmnXUAUqJ2jVbEK/UY39XxHnUBjI="></script><script type="text/javascript" async="" src="./12_files/js(2)" nonce="VUJJs6TsA3uHkSAMmnXUAUqJ2jVbEK/UY39XxHnUBjI="></script><script type="text/javascript" nonce="VUJJs6TsA3uHkSAMmnXUAUqJ2jVbEK/UY39XxHnUBjI=">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"02e09611df",applicationID:"156179534"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?p("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&p("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;p("lcp",[r])}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||p("cls",[t])})}function a(t){if(t instanceof g&&!y){var e=Math.round(t.timeStamp),n={type:t.type};e<=l.now()?n.fid=l.now()-e:e>l.offset&&e<=Date.now()?(e-=l.offset,n.fid=l.now()-e):e=l.now(),y=!0,p("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=l.now(),p("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d,p=t("handle"),l=t("loader"),v=t(9),m=t(3),g=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(h){}s=new PerformanceObserver(i);try{s.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}d=new PerformanceObserver(o);try{d.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var y=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,m(!1))})}v(c)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){y[t]=m(t).concat(e)}function v(t,e){var n=y[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return y[t]||[]}function g(t){return p[t]=p[t]||i(n)}function h(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var y={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:h,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!T++){var t=P.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+P.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+P.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,h="addEventListener",y="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1212.min.js"},M=w&&b&&b[h]&&!/CriOS/.test(navigator.userAgent),P=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:M,userAgent:s,disabled:E};if(!E){t(1),t(7),g[h]?(g[h]("DOMContentLoaded",o,l(!1)),m[h]("load",r,l(!1))):(g[y]("onreadystatechange",i),m[y]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var T=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="csrf-name" content="csrf61b9e939c5a3a">
+	<meta name="csrf-value" content="1368c8ad2bc60003c847b8caf1fbed22">
+	
+	<meta name="cart-hash" content="d751713988987e9331980363e24189ce">
+	<meta name="live-settings" content="[]">
+	<meta name="twitter:site" content="@VectorStock">
+	<meta property="og:site_name" content="VectorStock">
+	<meta property="fb:app_id" content="241100862642313">
+
+	<link rel="shortcut icon" href="https://cdn.vectorstock.com/img/icons/favicon.ico" type="image/x-icon">
+	<link rel="search" type="application/opensearchdescription+xml" title="VectorStock Search" href="https://www.vectorstock.com/xml/searchbox.xml">
+
+	<title>Done day planner and calendar app ui ux design ui Vector Image</title>
+	<meta name="description" content="Done Day Planner and Calendar App Ui Ux Design. UI, UX and GUI template layout for Mobile Apps. Calendar widget. EPS 10. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions..">
+	
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://www.vectorstock.com/royalty-free-vector/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060">
+	<meta property="og:title" content="Done day planner and calendar app ui ux design ui vector image on VectorStock">
+	<meta property="og:description" content="Done Day Planner and Calendar App Ui Ux Design. UI, UX and GUI template layout for Mobile Apps. Calendar widget. EPS 10. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions.">
+	<meta property="og:image" content="https://cdn1.vectorstock.com/i/1000x1000/10/60/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.jpg">
+	<meta property="og:image:url" content="https://cdn1.vectorstock.com/i/1000x1000/10/60/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.jpg">
+	<meta property="og:image:secure_url" content="https://cdn1.vectorstock.com/i/1000x1000/10/60/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.jpg">
+	<meta property="og:image:type" content="image/jpeg">
+	<meta property="og:image:width" content="1000">
+	<meta property="og:image:height" content="700">
+	
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:url" content="https://www.vectorstock.com/royalty-free-vector/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060">
+	<meta name="twitter:title" content="Done day planner and calendar app ui ux design ui vector image">
+	<meta name="twitter:description" content="Done Day Planner and Calendar App Ui Ux Design. UI, UX and GUI template layout for Mobile Apps. Calendar widget. EPS 10">
+	<meta name="twitter:image" content="https://cdn1.vectorstock.com/i/thumb-large/10/60/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.jpg">
+	<meta name="twitter:image:width" content="238">
+	<meta name="twitter:image:height" content="250">
+
+	<link rel="canonical" href="https://www.vectorstock.com/royalty-free-vector/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060">
+
+	<link rel="stylesheet" type="text/css" href="./12_files/common1638929519.min.css">
+	<link rel="stylesheet" type="text/css" href="./12_files/common-payment-paddle1638929519.min.css">
+	<link rel="stylesheet" type="text/css" href="./12_files/vector1638929519.min.css">
+	<script async="" src="./12_files/js(3)"></script>
+	<script src="./12_files/paddle.js"></script>
+	<script src="./12_files/common1639106779.min.js"></script>
+	<script src="./12_files/common-payment-paddle1639106779.min.js"></script>
+	<script src="./12_files/vector1639106779.min.js"></script>
+	<link rel="preload" href="https://cdn.vectorstock.com/i/1000x1000/10/60/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.webp" as="image">
+<script src="./12_files/f(1).txt" nonce="VUJJs6TsA3uHkSAMmnXUAUqJ2jVbEK/UY39XxHnUBjI="></script></head>
+<body>
+
+<!-- Top header -->
+<header>
+	<nav class="top">
+		<figure>
+			<a href="https://www.vectorstock.com/" title="VectorStock®">VectorStock®</a>
+		</figure>
+
+		<div class="grid">
+			<form id="searchbox" class="empty">
+				<div class="wrap">
+					<fieldset>
+						<div class="contents">
+							<div class="tags">
+								<ul></ul>
+							</div>
+							<div class="input">
+								<input type="text" name="input" autocomplete="off" autocapitalize="none" spellcheck="true" value="" placeholder="Search…" maxlength="50" autofocus="">
+								<button type="button" data-action="clear">×</button>
+							</div>
+
+							<input type="hidden" name="category" value="">
+							<input type="hidden" name="custom_srp" value="">
+							<input type="hidden" name="artist" value="">
+							<input type="hidden" name="similar" value="">
+						</div>
+					<div class="suggestions"><div></div></div></fieldset>
+
+					<button type="submit">
+						<span class="icon">Search</span>
+					</button>
+				</div>
+			</form>
+			<ul>
+				<li><a href="https://www.vectorstock.com/royalty-free-vectors">All Vectors</a></li>
+				<li><a href="https://www.vectorstock.com/free-vectors">Free Vectors</a></li>
+			</ul>
+		</div>
+
+		<div class="aside">
+			<ul>
+				<li><a href="https://www.vectorstock.com/popular-categories" title="Popular Categories">Categories</a></li>
+				<li><a href="https://www.vectorstock.com/pricing" title="Pricing">Pricing</a></li>
+				<li class="account">
+					<button type="button" data-action="signup">Sign Up</button>
+					<button type="button" data-action="login">Login</button>
+				</li>
+			</ul>
+		</div>
+
+		<div id="mobilenav-icon">
+			<span></span><span></span><span></span><span></span>
+		</div>
+	</nav>
+
+	<!-- Submenu -->
+		<nav id="searchrelated"></nav>	
+	<!-- Mobile menu -->
+	<div id="mobilenav-menu">
+		<div>
+			<div class="group">
+				<h4>Browse</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors">All Vectors</a></li>
+					<li><a href="https://www.vectorstock.com/free-vectors">Free Vectors</a></li>
+				</ul>
+			</div>
+			<div class="group">
+				<h4>Account</h4>
+				<ul>
+					<li class="account">
+						<ul>
+							<li><a href="https://www.vectorstock.com/signup">Sign Up</a></li>
+							<li data-action="login"><a href="https://www.vectorstock.com/?login=1">Login…</a></li>
+							<li><a href="https://www.vectorstock.com/pricing">Pricing</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form method="get" action="https://www.vectorstock.com/auth/logout" class="logout">
+					<input type="hidden" name="logout" value="1">
+				</form>
+			</div>
+			<div class="group">
+				<h4>Help</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/faq"><abbr title="Frequently Asked Questions">FAQs</abbr></a></li>
+					<li><a href="https://www.vectorstock.com/contact">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</header>
+
+		<!-- Account Menu Tabs -->
+		<aside id="nav_sidebar" class="tabs tabsDark">
+
+			<nav>
+				<ul role="tablist">
+					<li data-tab-id="signup" class=""><span role="tab"><span>Sign Up</span></span></li>
+					<li data-tab-id="login" class="selected"><span role="tab"><span>Log In</span></span></li>
+				</ul>
+			</nav>
+
+			<section id="sb_signup" data-tab-id="signup" class="">
+				<div class="primary">
+					<p>New to VectorStock?</p>
+					<p><em>We're the largest royalty-free, vector-only stock agency in the world.</em></p>
+					<p>Every week we add new premium graphics by the thousands.</p>
+				</div>
+				<div class="secondary">
+					<p>Whether you're a global ad&nbsp;agency or a freelance graphic designer, we have the vector graphics to make your project come to life.</p>
+					<p>Buy Vectors, sell Vectors or both. <a href="https://www.vectorstock.com/signup">Sign up now, it’s free.</a></p>
+				</div>
+				<div class="footer">
+					<button class="master">
+						<span class="title">Sign Up...</span>
+						<span class="value">
+							<span class="symbol signup"></span>
+						</span>
+					</button>
+				</div>
+			</section>
+
+			<section id="sb_login" data-tab-id="login" class="selected">
+				<form action="https://www.vectorstock.com/auth/login" method="post">
+					<fieldset class="">
+						<label for="vs_username">Email / Username</label>
+						<div class="textfield">
+							<input type="text" id="vs_username" name="vs_username" value="" autocomplete="on" tabindex="1">
+						</div>
+					</fieldset>
+					<fieldset class="">
+						<label for="vs_password">Password</label>
+						<button type="button" class="forgot">Forgot Password</button>
+						<div class="textfield">
+							<input type="password" id="vs_password" name="vs_password" value="" autocomplete="on" tabindex="2" maxlength="72">
+						</div>
+					</fieldset>
+
+
+					<button type="submit" tabindex="4">Log In</button>
+				</form>
+				<div class="alternatives">
+					<h6>Or Login With</h6>
+					<ul>
+						<li class="gp"><a href="https://www.vectorstock.com/">
+							<span class="title">Google</span>
+							<span class="icon"></span>
+						</a></li>
+						<li class="fb"><a href="https://www.vectorstock.com/">
+							<span class="title">Facebook</span>
+							<span class="icon"></span>
+						</a></li>
+					</ul>
+				</div>
+
+				
+			</section>
+		</aside>
+
+	<!-- Page -->
+	<article>
+		<section id="vs-asset" style="min-height: 742px; max-width: 1000px;">
+
+			<!-- Aside -->
+			<div class="aside">
+				<ol itemscope="" itemtype="http://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemtype="http://schema.org/Thing" itemprop="item" href="https://www.vectorstock.com/royalty-free-vectors">
+							<span itemprop="name">Royalty Free Vectors</span>
+						</a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+						<a itemtype="http://schema.org/Thing" itemprop="item" href="https://www.vectorstock.com/royalty-free-vectors/vector-vectors">
+							<span itemprop="name">Vector Vectors</span>
+						</a>
+						<meta itemprop="position" content="2">
+					</li>
+				</ol>
+
+				<h1>Done day planner and calendar app ui ux design ui vector&nbsp;image</h1>
+
+				<figure style="padding-top: 70.588235294118%;" class="target reveal">
+					<div class="highres" data-src="https://cdn1.vectorstock.com/i/1000x1000/10/60/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.jpg">
+						<picture>
+							<source type="image/webp" srcset="https://cdn.vectorstock.com/i/1000x1000/10/60/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.webp">
+							<source type="image/jpeg" srcset="https://cdn1.vectorstock.com/i/1000x1000/10/60/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.jpg">
+							<img src="./12_files/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.jpg" importance="high" title="Done day planner and calendar app ui ux design ui vector image" alt="Done day planner and calendar app ui ux design ui">
+						</picture>
+					</div>
+					<div class="overlay"></div>
+				</figure>
+
+				<form data-loggedin="0" data-licenses="2" data-license="standard" data-status="" data-payment="single-image">
+					<input type="hidden" id="vector_id" value="21281060">
+					<input type="hidden" id="vector_title" value="Done day planner and calendar app ui ux design ui">
+					<input type="hidden" id="vector_description" value="Done Day Planner and Calendar App Ui Ux Design. UI, UX and GUI template layout for Mobile Apps. Calendar widget. EPS 10. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions.">
+					<input type="hidden" id="vector_url" value="https://www.vectorstock.com/royalty-free-vector/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060">
+					<input type="hidden" id="vector_media" value="https://cdn1.vectorstock.com/i/1000x1000/10/60/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.jpg">
+					<input type="hidden" id="vector_ratio" value="0.70588235294118">
+					<input type="hidden" id="vector_license_status" value="">
+					<input type="hidden" id="artist_name" value="Delices_89">
+					<input type="hidden" id="account_user" value="0">
+
+					<input type="hidden" id="vector_download_urls" value="[]">
+					<input type="hidden" id="vector_license_options" value="[{&quot;type&quot;:&quot;standard&quot;,&quot;cost&quot;:{&quot;single-image&quot;:14.99,&quot;credits&quot;:1,&quot;subscription&quot;:1}},{&quot;type&quot;:&quot;expanded&quot;,&quot;cost&quot;:{&quot;single-image&quot;:39.99,&quot;credits&quot;:30}}]">
+					<input type="hidden" id="account_filetype" value="zip">
+					<input type="hidden" id="account_customizations" value="[]">
+					<input type="hidden" id="account_cloud" value="[{&quot;type&quot;:&quot;googledrive&quot;,&quot;status&quot;:&quot;connect&quot;},{&quot;type&quot;:&quot;dropbox&quot;,&quot;status&quot;:&quot;connect&quot;}]">
+					
+					<div class="options">
+						<!--
+						-- OPTION: License type
+						-->
+						<div class="option" data-type="license" data-license="standard" data-licenses="2">
+							<h6><span class="type">License</span><a href="https://www.vectorstock.com/faq/members/standard-license">Learn More</a></h6>
+							<div class="optgroup radgroup">
+								<fieldset class="checked">
+									<label for="f_license_standard">
+										<input type="radio" id="f_license_standard" name="license" value="standard" checked="checked" tabindex="2">
+										<span class="label">Standard</span>
+										<span class="descr">For Print, Advertising, Design</span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_license_expanded">
+										<input type="radio" id="f_license_expanded" name="license" value="expanded" tabindex="4">
+										<span class="label">Expanded</span>
+										<span class="descr">For Print on Demand &amp; Resale</span>
+									</label>
+								</fieldset>
+							</div>
+
+							<div class="help">
+								<p>The license type determines how you can use this image.</p>
+								<table>
+									<thead>
+										<tr>
+											<th></th>
+																						<th data-license="standard">Std.</th>																						<th data-license="expanded">Exp.</th>										</tr>
+									</thead>
+									<tbody>
+																				<tr>
+											<td>Print / Editorial</td>
+											<td data-license="standard"><span class="yes"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Graphic Design</td>
+											<td data-license="standard"><span class="yes"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Web Design</td>
+											<td data-license="standard"><span class="yes"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Social Media</td>
+											<td data-license="standard"><span class="yes"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Edit &amp; Modify</td>
+											<td data-license="standard"><span class="yes"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Multi-user</td>
+											<td data-license="standard"><span class="no"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Resale Items</td>
+											<td data-license="standard"><span class="no"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+										<tr>
+											<td>Print on Demand</td>
+											<td data-license="standard"><span class="no"></span></td><td data-license="expanded"><span class="yes"></span></td> 											
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						
+						<!--
+						-- OPTION: Payment options (Standard)
+						-->
+						<div class="option" data-type="payment" data-license="standard">
+							<h6><span class="type">Ways to Buy</span><a href="https://www.vectorstock.com/pricing">Compare</a></h6>
+							<div class="optgroup radgroup" data-license="standard">
+								<fieldset class="checked">
+									<label for="f_payment_standard_single-image">
+										<input type="radio" id="f_payment_standard_single-image" name="payment_standard" data-cost="14.99" value="single-image" checked="checked" tabindex="5">
+										<span class="label">Pay-per-Image</span>
+										<span class="value"><small>$</small><var>14.99</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_standard_credits">
+										<input type="radio" id="f_payment_standard_credits" name="payment_standard" data-cost="1" value="credits" tabindex="6">
+										<span class="label">Credits</span>
+										<span class="value"><small>$</small><var>1.00</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_standard_subscription">
+										<input type="radio" id="f_payment_standard_subscription" name="payment_standard" data-cost="1" value="subscription" tabindex="7">
+										<span class="label">Subscription</span>
+										<span class="value"><small>$</small><var>0.69</var></span>
+									</label>
+								</fieldset>
+							</div>
+							<div class="help reveal" style="display: none;">
+								<p>There are three ways to pay for Standard licenses. Prices are $<abbr title="United States Dollar">USD</abbr>.</p>
+
+								<table>
+									<thead>
+										<tr>
+											<th>Pay with</th>
+											<th>Image Price</th>
+										</tr>
+									</thead>
+									<tbody>
+																				<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pay-per-Image</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>14.99</span>
+												</span>
+												<span class="byline">One-time payment</span>
+											</td>
+										</tr>
+																				<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pre-paid Credits</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>1</span>
+												</span>
+												<span class="byline">Download images on-demand (1 credit = $1). Minimum purchase of 30.</span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Subscription Plan</span>
+													<span class="dm"></span>
+													<span class="dd"><em>From</em> 69¢</span>
+												</span>
+												<span class="byline">Choose a monthly plan. Unused downloads automatically roll into following month.</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<!--
+						-- OPTION: Payment options (Expanded)
+						-->
+						<div class="option" data-type="payment" data-license="expanded">
+							<h6><span class="type">Ways to Buy</span><a href="https://www.vectorstock.com/faq/members/ways-to-buy">Compare</a></h6>
+							<div class="optgroup radgroup" data-license="expanded">
+								<fieldset class="checked">
+									<label for="f_payment_expanded_single-image">
+										<input type="radio" id="f_payment_expanded_single-image" name="payment_expanded" data-cost="39.99" value="single-image" checked="checked" tabindex="8">
+										<span class="label">Pay-per-Image</span>
+										<span class="value"><small>$</small><var>39.99</var></span>
+									</label>
+								</fieldset>
+								<fieldset>
+									<label for="f_payment_expanded_credits">
+										<input type="radio" id="f_payment_expanded_credits" name="payment_expanded" data-cost="30" value="credits" tabindex="9">
+										<span class="label">Credits</span>
+										<span class="value"><small>$</small><var>30.00</var></span>
+									</label>
+								</fieldset>
+							</div>
+														<div class="help">
+								<p>There are two ways to pay for Expanded licenses. Prices are $<abbr title="United States Dollar">USD</abbr>.</p>
+
+								<table>
+									<thead>
+										<tr>
+											<th>Pay with</th>
+											<th>Cost per Image</th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pay-per-Image</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>39.99</span>
+												</span>
+												<span class="byline">One-off payment, no signup needed.</span>
+											</td>
+										</tr>
+										<tr>
+											<td colspan="2">
+												<span class="title">
+													<span class="dt">Pre-paid Credits</span>
+													<span class="dm"></span>
+													<span class="dd"><small>$</small>30</span>
+												</span>
+												<span class="byline">Download images on-demand (1 credit = $1).</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+													</div>
+						<!--
+						-- OPTION: Customization
+						-->
+						<div class="option" data-type="customization">
+							<h6><span class="type">New Option!</span><a href="https://www.vectorstock.com/faq/members/what-is-hire-a-designer">What is this?</a></h6>
+							<div class="optgroup chkgroup">
+								<fieldset>
+									<label for="f_payment_customization">
+										<input type="checkbox" id="f_payment_customization" name="payment_customization" data-cost="85" value="customization" tabindex="12">
+										<span class="label">Customize image</span>
+										<span class="descr">Only available with Pay-per-Image</span>
+										<span class="value"><small>$</small><var>85.00</var></span>
+									</label>
+								</fieldset>
+							</div>
+							<div class="help">
+								<p>Love the image but just need a few modifications? Let our talented artists do the work for you!</p>
+								<p>We’ll connect you with a designer who can make updates and send you the artwork in a format of your choice.</p>
+								<h4>Examples</h4>
+								<ul>
+									<li>Change the text</li>
+									<li>Modify colors</li>
+									<li>Resize to new dimensions</li>
+									<li>Include logo or symbol</li>
+									<li>Add your company or business name</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="download">
+						<button type="button" data-action="download">
+							<span class="label">Download Image</span>
+							<span class="icon"></span>
+						</button>
+						<h6><span class="label">Files Included</span></h6>
+						<div class="help" style="display: none;">
+							
+						<table><thead><tr><th>File Type</th><th>Size</th></tr></thead><tbody><tr class="ai"><td colspan="2"><span class="row"><span class="dt">AI</span><span class="dm"></span><span class="dd">383 <small>KB</small></span></span></td></tr><tr class="eps"><td colspan="2"><span class="row"><span class="dt">EPS</span><span class="dm"></span><span class="dd">3.23 <small>MB</small></span></span></td></tr><tr class="pdf"><td colspan="2"><span class="row"><span class="dt">PDF</span><span class="dm"></span><span class="dd">510 <small>KB</small></span></span></td></tr><tr class="jpg"><td colspan="2"><span class="row"><span class="dt">JPG <small>(3000px by 1985px)</small></span><span class="dm"></span><span class="dd">495 <small>KB</small></span></span></td></tr><tr class="png"><td colspan="2"><span class="row"><span class="dt">PNG <small>(3000px by 1985px)</small></span><span class="dm"></span><span class="dd">131 <small>KB</small></span></span></td></tr><tr class="zip"><td colspan="2"><span class="row"><span class="dt">ZIP</span><span class="dm"></span><span class="dd">1.63 <small>MB</small></span></span></td></tr></tbody></table></div>
+					</div>
+				</form>
+			</div>
+
+			<!-- Image -->
+			<div class="image">
+				<figure data-orientation="landscape" style="padding-top: 70.588235294118%;" class="target reveal">
+					<div class="highres" data-src="https://cdn1.vectorstock.com/i/1000x1000/10/60/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.jpg">
+						<picture>
+							<source type="image/webp" srcset="https://cdn.vectorstock.com/i/1000x1000/10/60/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.webp">
+							<source type="image/jpeg" srcset="https://cdn1.vectorstock.com/i/1000x1000/10/60/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.jpg">
+							<img src="./12_files/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.jpg" importance="high" title="Done day planner and calendar app ui ux design ui vector image" alt="Done day planner and calendar app ui ux design ui">
+						</picture>
+					</div>
+					<div class="overlay"></div>
+					<div class="panels">
+						<div class="share">
+							<h4>Share with others</h4>
+							<ul>
+								<li class="pinterest"><button type="button" data-action="pinterest"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M12.5,0C5.6,0,0,5.6,0,12.5c0,5.12,3.08,9.52,7.48,11.45c-0.03-0.87-0.01-1.92,0.22-2.87c0.24-1.01,1.61-6.81,1.61-6.81s-0.4-0.8-0.4-1.98c0-1.85,1.07-3.24,2.41-3.24c1.14,0,1.69,0.85,1.69,1.88c0,1.14-0.73,2.85-1.1,4.44c-0.31,1.33,0.67,2.41,1.97,2.41c2.37,0,3.96-3.04,3.96-6.65c0-2.74-1.85-4.79-5.2-4.79c-3.79,0-6.15,2.83-6.15,5.99c0,1.09,0.32,1.86,0.82,2.45c0.23,0.27,0.26,0.38,0.18,0.7c-0.06,0.23-0.2,0.78-0.25,1c-0.08,0.32-0.34,0.43-0.63,0.31c-1.75-0.71-2.56-2.62-2.56-4.77c0-3.55,3-7.81,8.93-7.81c4.77,0,7.91,3.45,7.91,7.16c0,4.9-2.73,8.57-6.75,8.57c-1.35,0-2.62-0.73-3.05-1.56c0,0-0.73,2.88-0.88,3.44c-0.27,0.96-0.78,1.93-1.26,2.68C10.08,24.82,11.27,25,12.5,25C19.4,25,25,19.4,25,12.5S19.4,0,12.5,0L12.5,0z"></path></svg></span><span class="label">Pinterest</span></span></button></li>
+								<li class="facebook"><button type="button" data-action="facebook"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M22.44,1H2.56C1.7,1,1,1.7,1,2.56v19.88C1,23.3,1.7,24,2.56,24h10.41v-8.89H9.98v-3.46h2.99V9.1c0-2.96,1.81-4.58,4.45-4.58c1.27,0,2.35,0.09,2.67,0.14v3.1l-1.83,0c-1.44,0-1.72,0.68-1.72,1.69v2.21h3.43l-0.45,3.46h-2.98V24h5.89C23.3,24,24,23.3,24,22.44V2.56C24,1.7,23.3,1,22.44,1z"></path></svg></span><span class="label">Facebook</span></span></button></li>
+								<li class="twitter"><button type="button" data-action="twitter"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M7.86,22.5c9.43,0,14.59-7.69,14.59-14.37c0-0.22,0-0.44-0.01-0.65c1-0.71,1.87-1.6,2.56-2.61c-0.92,0.4-1.91,0.67-2.95,0.79c1.06-0.62,1.87-1.61,2.26-2.79c-0.99,0.58-2.09,1-3.26,1.23c-0.94-0.98-2.27-1.6-3.74-1.6c-2.83,0-5.13,2.26-5.13,5.05c0,0.4,0.05,0.78,0.13,1.15C8.05,8.49,4.27,6.48,1.74,3.42C1.3,4.17,1.05,5.04,1.05,5.96c0,1.75,0.91,3.3,2.28,4.2C2.49,10.14,1.7,9.91,1,9.53C1,9.55,1,9.58,1,9.6c0,2.45,1.77,4.49,4.11,4.95c-0.43,0.12-0.88,0.18-1.35,0.18c-0.33,0-0.65-0.03-0.96-0.09c0.65,2.01,2.55,3.47,4.79,3.51C5.84,19.5,3.63,20.3,1.22,20.3c-0.41,0-0.82-0.02-1.22-0.07C2.27,21.66,4.97,22.5,7.86,22.5"></path></svg></span><span class="label">Twitter</span></span></button></li>
+								<li class="email"><button type="button" data-action="email"><span><span class="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" focusable="false" role="img"><path d="M22.48,4.17H2.52C1.13,4.17,0,5.3,0,6.69v11.62c0,1.39,1.13,2.52,2.52,2.52h19.96c1.39,0,2.52-1.13,2.52-2.52V6.69C25,5.3,23.87,4.17,22.48,4.17z M23.49,18.31c0,0.56-0.45,1.01-1.01,1.01H2.52c-0.55,0-1.01-0.45-1.01-1.01V6.69c0-0.56,0.45-1.01,1.01-1.01h19.96c0.56,0,1.01,0.45,1.01,1.01V18.31z"></path><path d="M19.95,7.95l-7.45,4.83L5.05,7.95C4.7,7.72,4.24,7.82,4.01,8.17C3.78,8.52,3.88,8.99,4.23,9.22l7.86,5.1c0.13,0.08,0.27,0.12,0.41,0.12s0.29-0.04,0.41-0.12l7.86-5.1c0.35-0.23,0.45-0.7,0.22-1.05C20.77,7.82,20.3,7.72,19.95,7.95z"></path></svg></span><span class="label">Email</span></span></button></li>
+							</ul>
+						</div>
+						<div class="composite">
+							<button type="button" data-action="download"><span><span class="label">Download JPG Preview Image</span></span></button>
+						</div>
+					</div>
+				</figure>
+				<div class="details">
+					<div class="meta">
+						<ul>
+							<li class="meta-id">
+								<dl><dt>Image ID</dt><dd>21281060</dd></dl>
+							</li>
+							<li class="meta-color-mode">
+								<dl><dt>Color Mode</dt><dd>RGB</dd></dl>
+							</li>
+							<li class="meta-artist">
+								<dl>
+									<dt>Artist</dt>
+									<dd>
+										<a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_Delices_89" rel="nofollow">Delices_89</a>
+										<button type="button" data-action="follow" title="Follow Artists that you like to create a newsfeed of their recent images."><span class="label">Follow</span></button>
+									</dd>
+								</dl>
+							</li>
+						</ul>
+					</div>
+					<div class="options" data-total="2">
+						<ul>
+							<li class="opt-like">
+								<button type="button" data-action="like" data-count="0"><span class="icon">♥</span><span class="label">Like</span><span class="tally"></span></button>
+							</li>
+							<li class="opt-cart">
+								<button type="button" data-action="cart"><span class="icon">+</span><span class="label">Cart</span></button>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!-- Metadata -->
+			<div class="metadata">
+				<div itemtype="http://schema.org/ImageObject" itemscope="">
+					<meta itemprop="contentUrl" content="https://cdn1.vectorstock.com/i/1000x1000/10/60/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.jpg">
+					<meta itemprop="thumbnailUrl" content="https://cdn1.vectorstock.com/i/thumb-large/10/60/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060.jpg">
+					<meta itemprop="name" content="Done day planner and calendar app ui ux design ui">
+					<meta itemprop="description" content="Done Day Planner and Calendar App Ui Ux Design. UI, UX and GUI template layout for Mobile Apps. Calendar widget. EPS 10. Download a Free Preview or High Quality Adobe Illustrator Ai, EPS, PDF and High Resolution JPEG versions. vector image">
+					<meta itemprop="author" content="Delices_89">
+					<meta itemprop="datePublished" content="2018-07-10">
+					<meta itemprop="license" content="https://www.vectorstock.com/faq/members/standard-license">
+					<meta itemprop="acquireLicensePage" content="https://www.vectorstock.com/royalty-free-vector/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-21281060">
+					<meta itemprop="sourceOrganization" content="VectorStock.com">
+				</div>
+			</div>
+			
+		</section>
+
+
+		<section id="vs-related">
+						<div id="group-similar" class="group">
+				<h6><span class="icon"></span><strong>Similar Images</strong></h6>
+
+				<div class="gallery large">
+					<ul>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/68/84/calendar-app-september-2021-ui-ux-neumorphic-vector-34336884.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/calendar-app-september-2021-ui-ux-neumorphic-vector-34336884" title="calendar app september 2021 ui ux neumorphic vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/68/84/calendar-app-september-2021-ui-ux-neumorphic-vector-34336884.jpg" title="calendar app september 2021 ui ux neumorphic" alt="calendar app september 2021 ui ux neumorphic vector image"></noscript><img src="./12_files/calendar-app-september-2021-ui-ux-neumorphic-vector-34336884.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/68/71/event-notification-app-icon-vector-28876871.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/event-notification-app-icon-vector-28876871" title="event notification app icon vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/68/71/event-notification-app-icon-vector-28876871.jpg" title="event notification app icon" alt="event notification app icon vector image"></noscript><img src="./12_files/event-notification-app-icon-vector-28876871.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/14/14/wedding-day-cake-invitation-gifts-church-vector-35681414.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/wedding-day-cake-invitation-gifts-church-vector-35681414" title="wedding day cake invitation gifts church vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/14/14/wedding-day-cake-invitation-gifts-church-vector-35681414.jpg" title="wedding day cake invitation gifts church" alt="wedding day cake invitation gifts church vector image"></noscript><img src="./12_files/wedding-day-cake-invitation-gifts-church-vector-35681414.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/19/01/calendar-app-phone-application-ui-with-vector-28951901.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/calendar-app-phone-application-ui-with-vector-28951901" title="calendar app phone application ui with vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/19/01/calendar-app-phone-application-ui-with-vector-28951901.jpg" title="calendar app phone application ui with" alt="calendar app phone application ui with vector image"></noscript><img src="./12_files/calendar-app-phone-application-ui-with-vector-28951901.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/12/22/calendar-weather-app-ui-design-for-mobile-phone-vector-21291222.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/calendar-weather-app-ui-design-for-mobile-phone-vector-21291222" title="calendar weather app ui design for mobile phone vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/12/22/calendar-weather-app-ui-design-for-mobile-phone-vector-21291222.jpg" title="calendar weather app ui design for mobile phone" alt="calendar weather app ui design for mobile phone vector image"></noscript><img src="./12_files/calendar-weather-app-ui-design-for-mobile-phone-vector-21291222.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/69/90/business-time-planning-strategy-for-work-vector-35276990.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/business-time-planning-strategy-for-work-vector-35276990" title="business time planning strategy for work vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/69/90/business-time-planning-strategy-for-work-vector-35276990.jpg" title="business time planning strategy for work" alt="business time planning strategy for work vector image"></noscript><img src="./12_files/business-time-planning-strategy-for-work-vector-35276990.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/97/39/calendar-app-template-vector-23359739.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/calendar-app-template-vector-23359739" title="calendar app template vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/97/39/calendar-app-template-vector-23359739.jpg" title="calendar app template" alt="calendar app template vector image"></noscript><img src="./12_files/calendar-app-template-vector-23359739.jpg"></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/16/73/flat-female-hand-with-a-smartphone-with-a-calendar-vector-27231673.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/flat-female-hand-with-a-smartphone-with-a-calendar-vector-27231673" title="flat female hand with a smartphone with a calendar vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/16/73/flat-female-hand-with-a-smartphone-with-a-calendar-vector-27231673.jpg" title="flat female hand with a smartphone with a calendar" alt="flat female hand with a smartphone with a calendar vector image"></noscript><img src="./12_files/flat-female-hand-with-a-smartphone-with-a-calendar-vector-27231673.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/73/24/mobile-planner-website-landing-page-design-vector-27037324.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-planner-website-landing-page-design-vector-27037324" title="mobile planner website landing page design vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/73/24/mobile-planner-website-landing-page-design-vector-27037324.jpg" title="mobile planner website landing page design" alt="mobile planner website landing page design vector image"></noscript><img src="./12_files/mobile-planner-website-landing-page-design-vector-27037324.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/36/66/cute-calendar-icon-in-flat-style-isolated-vector-34743666.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/cute-calendar-icon-in-flat-style-isolated-vector-34743666" title="cute calendar icon in flat style isolated vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/36/66/cute-calendar-icon-in-flat-style-isolated-vector-34743666.jpg" title="cute calendar icon in flat style isolated" alt="cute calendar icon in flat style isolated vector image"></noscript><img src="./12_files/cute-calendar-icon-in-flat-style-isolated-vector-34743666.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/16/21/calendar-icons-line-art-style-design-icons-vector-39471621.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/calendar-icons-line-art-style-design-icons-vector-39471621" title="calendar icons line art style design icons vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/16/21/calendar-icons-line-art-style-design-icons-vector-39471621.jpg" title="calendar icons line art style design icons" alt="calendar icons line art style design icons vector image"></noscript><img src="./12_files/calendar-icons-line-art-style-design-icons-vector-39471621.jpg"></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/77/03/wireframes-screens-dashboard-ui-and-ux-kit-design-vector-38937703.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/wireframes-screens-dashboard-ui-and-ux-kit-design-vector-38937703" title="wireframes screens dashboard ui and ux kit design vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/77/03/wireframes-screens-dashboard-ui-and-ux-kit-design-vector-38937703.jpg" title="wireframes screens dashboard ui and ux kit design" alt="wireframes screens dashboard ui and ux kit design vector image"></noscript><img src="./12_files/wireframes-screens-dashboard-ui-and-ux-kit-design-vector-38937703.jpg"></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/77/69/modern-screen-design-for-mobile-app-collection-vector-24227769.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/modern-screen-design-for-mobile-app-collection-vector-24227769" title="modern screen design for mobile app collection vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/77/69/modern-screen-design-for-mobile-app-collection-vector-24227769.jpg" title="modern screen design for mobile app collection" alt="modern screen design for mobile app collection vector image"></noscript><img src="./12_files/modern-screen-design-for-mobile-app-collection-vector-24227769.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/57/35/mobile-app-development-modern-line-design-icons-vector-21475735.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-app-development-modern-line-design-icons-vector-21475735" title="mobile app development - modern line design icons vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/57/35/mobile-app-development-modern-line-design-icons-vector-21475735.jpg" title="mobile app development - modern line design icons" alt="mobile app development - modern line design icons vector image"></noscript><img src="./12_files/mobile-app-development-modern-line-design-icons-vector-21475735.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/53/15/set-flat-line-icons-seo-and-web-design-vector-29335315.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/set-flat-line-icons-seo-and-web-design-vector-29335315" title="set flat line icons seo and web design vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/53/15/set-flat-line-icons-seo-and-web-design-vector-29335315.jpg" title="set flat line icons seo and web design" alt="set flat line icons seo and web design vector image"></noscript><img src="./12_files/set-flat-line-icons-seo-and-web-design-vector-29335315.jpg"></a></li>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/98/65/gradient-background-vector-21179865.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/gradient-background-vector-21179865" title="gradient background vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/98/65/gradient-background-vector-21179865.jpg" title="gradient background" alt="gradient background vector image"></noscript><img src="./12_files/gradient-background-vector-21179865.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/69/77/soft-colorful-smartphone-screen-background-set-vector-23366977.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/soft-colorful-smartphone-screen-background-set-vector-23366977" title="soft colorful smartphone screen background set vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/69/77/soft-colorful-smartphone-screen-background-set-vector-23366977.jpg" title="soft colorful smartphone screen background set" alt="soft colorful smartphone screen background set vector image"></noscript></a></li>
+						<li data-src="https://cdn5.vectorstock.com/i/thumb-large/65/89/3d-isometric-flat-conceptual-vector-38786589.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/3d-isometric-flat-conceptual-vector-38786589" title="3d isometric flat conceptual vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumb-large/65/89/3d-isometric-flat-conceptual-vector-38786589.jpg" title="3d isometric flat conceptual" alt="3d isometric flat conceptual vector image"></noscript></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/22/66/reminder-notification-black-and-white-glyph-icons-vector-27702266.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/reminder-notification-black-and-white-glyph-icons-vector-27702266" title="reminder notification black and white glyph icons vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/22/66/reminder-notification-black-and-white-glyph-icons-vector-27702266.jpg" title="reminder notification black and white glyph icons" alt="reminder notification black and white glyph icons vector image"></noscript></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/84/77/phone-interface-modern-mobile-application-vector-30338477.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/phone-interface-modern-mobile-application-vector-30338477" title="phone interface modern mobile application vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/84/77/phone-interface-modern-mobile-application-vector-30338477.jpg" title="phone interface modern mobile application" alt="phone interface modern mobile application vector image"></noscript></a></li>
+					</ul>
+				</div>
+				<div class="gallery small more">
+					<ul>
+						<li data-id="24918039" data-title="calendar icon set flat signs" data-src="https://cdn5.vectorstock.com/i/thumbs/80/39/calendar-icon-set-flat-signs-vector-24918039.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/calendar-icon-set-flat-signs-vector-24918039" title="calendar icon set flat signs vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/80/39/calendar-icon-set-flat-signs-vector-24918039.jpg" title="calendar icon set flat signs" alt="calendar icon set flat signs vector image"></noscript><img src="./12_files/calendar-icon-set-flat-signs-vector-24918039.jpg"></a></li>
+						<li data-id="22464344" data-title="calendar and clock icon" data-src="https://cdn5.vectorstock.com/i/thumbs/43/44/calendar-and-clock-icon-vector-22464344.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/calendar-and-clock-icon-vector-22464344" title="calendar and clock icon vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/43/44/calendar-and-clock-icon-vector-22464344.jpg" title="calendar and clock icon" alt="calendar and clock icon vector image"></noscript><img src="./12_files/calendar-and-clock-icon-vector-22464344.jpg"></a></li>
+						<li data-id="23753777" data-title="liquid shapes posters modern color fluid shape" data-src="https://cdn3.vectorstock.com/i/thumbs/37/77/liquid-shapes-posters-modern-color-fluid-shape-vector-23753777.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/liquid-shapes-posters-modern-color-fluid-shape-vector-23753777" title="liquid shapes posters modern color fluid shape vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/37/77/liquid-shapes-posters-modern-color-fluid-shape-vector-23753777.jpg" title="liquid shapes posters modern color fluid shape" alt="liquid shapes posters modern color fluid shape vector image"></noscript><img src="./12_files/liquid-shapes-posters-modern-color-fluid-shape-vector-23753777.jpg"></a></li>
+						<li data-id="25937927" data-title="rounded holographic color gradient for button web" data-src="https://cdn3.vectorstock.com/i/thumbs/79/27/rounded-holographic-color-gradient-for-button-web-vector-25937927.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/rounded-holographic-color-gradient-for-button-web-vector-25937927" title="rounded holographic color gradient for button web vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/79/27/rounded-holographic-color-gradient-for-button-web-vector-25937927.jpg" title="rounded holographic color gradient for button web" alt="rounded holographic color gradient for button web vector image"></noscript><img src="./12_files/rounded-holographic-color-gradient-for-button-web-vector-25937927.jpg"></a></li>
+						<li data-id="39685339" data-title="neumorphic ui user interface buttons search bars" data-src="https://cdn5.vectorstock.com/i/thumbs/53/39/neumorphic-ui-user-interface-buttons-search-bars-vector-39685339.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/neumorphic-ui-user-interface-buttons-search-bars-vector-39685339" title="neumorphic ui user interface buttons search bars vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/53/39/neumorphic-ui-user-interface-buttons-search-bars-vector-39685339.jpg" title="neumorphic ui user interface buttons search bars" alt="neumorphic ui user interface buttons search bars vector image"></noscript><img src="./12_files/neumorphic-ui-user-interface-buttons-search-bars-vector-39685339.jpg"></a></li>
+						<li data-id="30715192" data-title="ui ux gui wireframe set collection travels" data-src="https://cdn3.vectorstock.com/i/thumbs/51/92/ui-ux-gui-wireframe-set-collection-travels-vector-30715192.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/ui-ux-gui-wireframe-set-collection-travels-vector-30715192" title="ui ux gui wireframe set collection travels vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/51/92/ui-ux-gui-wireframe-set-collection-travels-vector-30715192.jpg" title="ui ux gui wireframe set collection travels" alt="ui ux gui wireframe set collection travels vector image"></noscript><img src="./12_files/ui-ux-gui-wireframe-set-collection-travels-vector-30715192.jpg"></a></li>
+						<li data-id="35831948" data-title="calendar flat icon" data-src="https://cdn4.vectorstock.com/i/thumbs/19/48/calendar-flat-icon-vector-35831948.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/calendar-flat-icon-vector-35831948" title="calendar flat icon vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/19/48/calendar-flat-icon-vector-35831948.jpg" title="calendar flat icon" alt="calendar flat icon vector image"></noscript><img src="./12_files/calendar-flat-icon-vector-35831948.jpg"></a></li>
+						<li data-id="21827055" data-title="calendar line icon" data-src="https://cdn1.vectorstock.com/i/thumbs/70/55/calendar-line-icon-vector-21827055.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/calendar-line-icon-vector-21827055" title="calendar line icon vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/70/55/calendar-line-icon-vector-21827055.jpg" title="calendar line icon" alt="calendar line icon vector image"></noscript><img src="./12_files/calendar-line-icon-vector-21827055.jpg"></a></li>
+						<li data-id="26165269" data-title="clock mobile app concept ui design day and night" data-src="https://cdn5.vectorstock.com/i/thumbs/52/69/clock-mobile-app-concept-ui-design-day-and-night-vector-26165269.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/clock-mobile-app-concept-ui-design-day-and-night-vector-26165269" title="clock mobile app concept ui design day and night vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/52/69/clock-mobile-app-concept-ui-design-day-and-night-vector-26165269.jpg" title="clock mobile app concept ui design day and night" alt="clock mobile app concept ui design day and night vector image"></noscript><img src="./12_files/clock-mobile-app-concept-ui-design-day-and-night-vector-26165269.jpg"></a></li>
+						<li data-id="21552173" data-title="white calendar icon in flat style" data-src="https://cdn4.vectorstock.com/i/thumbs/21/73/white-calendar-icon-in-flat-style-vector-21552173.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/white-calendar-icon-in-flat-style-vector-21552173" title="white calendar icon in flat style vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/21/73/white-calendar-icon-in-flat-style-vector-21552173.jpg" title="white calendar icon in flat style" alt="white calendar icon in flat style vector image"></noscript><img src="./12_files/white-calendar-icon-in-flat-style-vector-21552173.jpg"></a></li>
+						<li data-id="38586170" data-title="landing page planning concept" data-src="https://cdn1.vectorstock.com/i/thumbs/61/70/landing-page-planning-concept-vector-38586170.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/landing-page-planning-concept-vector-38586170" title="landing page planning concept vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/61/70/landing-page-planning-concept-vector-38586170.jpg" title="landing page planning concept" alt="landing page planning concept vector image"></noscript><img src="./12_files/landing-page-planning-concept-vector-38586170.jpg"></a></li>
+						<li data-id="27460055" data-title="set mobile keyboards alphabet" data-src="https://cdn1.vectorstock.com/i/thumbs/00/55/set-mobile-keyboards-alphabet-vector-27460055.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/set-mobile-keyboards-alphabet-vector-27460055" title="set mobile keyboards alphabet vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/00/55/set-mobile-keyboards-alphabet-vector-27460055.jpg" title="set mobile keyboards alphabet" alt="set mobile keyboards alphabet vector image"></noscript><img src="./12_files/set-mobile-keyboards-alphabet-vector-27460055.jpg"></a></li>
+						<li data-id="30136017" data-title="alarm clock stopwatch timer ui mobile phone" data-src="https://cdn3.vectorstock.com/i/thumbs/60/17/alarm-clock-stopwatch-timer-ui-mobile-phone-vector-30136017.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/alarm-clock-stopwatch-timer-ui-mobile-phone-vector-30136017" title="alarm clock stopwatch timer ui mobile phone vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/60/17/alarm-clock-stopwatch-timer-ui-mobile-phone-vector-30136017.jpg" title="alarm clock stopwatch timer ui mobile phone" alt="alarm clock stopwatch timer ui mobile phone vector image"></noscript><img src="./12_files/alarm-clock-stopwatch-timer-ui-mobile-phone-vector-30136017.jpg"></a></li>
+						<li data-id="26545212" data-title="smartphone mobile phone isolated on white" data-src="https://cdn3.vectorstock.com/i/thumbs/52/12/smartphone-mobile-phone-isolated-on-white-vector-26545212.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/smartphone-mobile-phone-isolated-on-white-vector-26545212" title="smartphone mobile phone isolated on white vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/52/12/smartphone-mobile-phone-isolated-on-white-vector-26545212.jpg" title="smartphone mobile phone isolated on white" alt="smartphone mobile phone isolated on white vector image"></noscript><img src="./12_files/smartphone-mobile-phone-isolated-on-white-vector-26545212.jpg"></a></li>
+						<li data-id="22949234" data-title="mobile keyboard for tablet computer" data-src="https://cdn5.vectorstock.com/i/thumbs/92/34/mobile-keyboard-for-tablet-computer-vector-22949234.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-keyboard-for-tablet-computer-vector-22949234" title="mobile keyboard for tablet computer vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/92/34/mobile-keyboard-for-tablet-computer-vector-22949234.jpg" title="mobile keyboard for tablet computer" alt="mobile keyboard for tablet computer vector image"></noscript><img src="./12_files/mobile-keyboard-for-tablet-computer-vector-22949234.jpg"></a></li>
+						<li data-id="39258132" data-title="calendar in smartphone online schedule" data-src="https://cdn3.vectorstock.com/i/thumbs/81/32/calendar-in-smartphone-online-schedule-vector-39258132.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/calendar-in-smartphone-online-schedule-vector-39258132" title="calendar in smartphone online schedule vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/81/32/calendar-in-smartphone-online-schedule-vector-39258132.jpg" title="calendar in smartphone online schedule" alt="calendar in smartphone online schedule vector image"></noscript></a></li>
+						<li data-id="28137954" data-title="on off switch dark and light mode switcher" data-src="https://cdn5.vectorstock.com/i/thumbs/79/54/on-off-switch-dark-and-light-mode-switcher-vector-28137954.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/on-off-switch-dark-and-light-mode-switcher-vector-28137954" title="on off switch dark and light mode switcher vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/79/54/on-off-switch-dark-and-light-mode-switcher-vector-28137954.jpg" title="on off switch dark and light mode switcher" alt="on off switch dark and light mode switcher vector image"></noscript></a></li>
+						<li data-id="20996645" data-title="paper spiral wall calendar in smartphone" data-src="https://cdn1.vectorstock.com/i/thumbs/66/45/paper-spiral-wall-calendar-in-smartphone-vector-20996645.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/paper-spiral-wall-calendar-in-smartphone-vector-20996645" title="paper spiral wall calendar in smartphone vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/66/45/paper-spiral-wall-calendar-in-smartphone-vector-20996645.jpg" title="paper spiral wall calendar in smartphone" alt="paper spiral wall calendar in smartphone vector image"></noscript></a></li>
+						<li data-id="23192150" data-title="alarm clock arrow line icon stopwatch timer clock" data-src="https://cdn1.vectorstock.com/i/thumbs/21/50/alarm-clock-arrow-line-icon-stopwatch-timer-clock-vector-23192150.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/alarm-clock-arrow-line-icon-stopwatch-timer-clock-vector-23192150" title="alarm clock arrow line icon stopwatch timer clock vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/21/50/alarm-clock-arrow-line-icon-stopwatch-timer-clock-vector-23192150.jpg" title="alarm clock arrow line icon stopwatch timer clock" alt="alarm clock arrow line icon stopwatch timer clock vector image"></noscript></a></li>
+						<li data-id="36155449" data-title="flat calendar icon with data" data-src="https://cdn5.vectorstock.com/i/thumbs/54/49/flat-calendar-icon-with-data-vector-36155449.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/flat-calendar-icon-with-data-vector-36155449" title="flat calendar icon with data vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/54/49/flat-calendar-icon-with-data-vector-36155449.jpg" title="flat calendar icon with data" alt="flat calendar icon with data vector image"></noscript></a></li>
+						<li data-id="27072901" data-title="calendar icon simple flat style" data-src="https://cdn2.vectorstock.com/i/thumbs/29/01/calendar-icon-simple-flat-style-vector-27072901.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/calendar-icon-simple-flat-style-vector-27072901" title="calendar icon simple flat style vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/29/01/calendar-icon-simple-flat-style-vector-27072901.jpg" title="calendar icon simple flat style" alt="calendar icon simple flat style vector image"></noscript></a></li>
+						<li data-id="21062862" data-title="calendar icon" data-src="https://cdn3.vectorstock.com/i/thumbs/28/62/calendar-icon-vector-21062862.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/calendar-icon-vector-21062862" title="calendar icon vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/28/62/calendar-icon-vector-21062862.jpg" title="calendar icon" alt="calendar icon vector image"></noscript></a></li>
+						<li data-id="38982673" data-title="editable stroke solid color style icons" data-src="https://cdn4.vectorstock.com/i/thumbs/26/73/editable-stroke-solid-color-style-icons-vector-38982673.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/editable-stroke-solid-color-style-icons-vector-38982673" title="editable stroke solid color style icons vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/26/73/editable-stroke-solid-color-style-icons-vector-38982673.jpg" title="editable stroke solid color style icons" alt="editable stroke solid color style icons vector image"></noscript></a></li>
+						<li data-id="26920504" data-title="project schedule management isometric concept" data-src="https://cdn5.vectorstock.com/i/thumbs/05/04/project-schedule-management-isometric-concept-vector-26920504.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/project-schedule-management-isometric-concept-vector-26920504" title="project schedule management isometric concept vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/05/04/project-schedule-management-isometric-concept-vector-26920504.jpg" title="project schedule management isometric concept" alt="project schedule management isometric concept vector image"></noscript></a></li>
+						<li data-id="34153844" data-title="dashboard kit earnings report" data-src="https://cdn5.vectorstock.com/i/thumbs/38/44/dashboard-kit-earnings-report-vector-34153844.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/dashboard-kit-earnings-report-vector-34153844" title="dashboard kit earnings report vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/38/44/dashboard-kit-earnings-report-vector-34153844.jpg" title="dashboard kit earnings report" alt="dashboard kit earnings report vector image"></noscript></a></li>
+						<li data-id="28332439" data-title="2020 calendar flat icon calendar cover sheet" data-src="https://cdn5.vectorstock.com/i/thumbs/24/39/2020-calendar-flat-icon-calendar-cover-sheet-vector-28332439.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/2020-calendar-flat-icon-calendar-cover-sheet-vector-28332439" title="2020 calendar flat icon calendar cover sheet vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/24/39/2020-calendar-flat-icon-calendar-cover-sheet-vector-28332439.jpg" title="2020 calendar flat icon calendar cover sheet" alt="2020 calendar flat icon calendar cover sheet vector image"></noscript></a></li>
+						<li data-id="38391204" data-title="coutdown sale timer flip board with scoreboard" data-src="https://cdn5.vectorstock.com/i/thumbs/12/04/coutdown-sale-timer-flip-board-with-scoreboard-vector-38391204.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/coutdown-sale-timer-flip-board-with-scoreboard-vector-38391204" title="coutdown sale timer flip board with scoreboard vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/12/04/coutdown-sale-timer-flip-board-with-scoreboard-vector-38391204.jpg" title="coutdown sale timer flip board with scoreboard" alt="coutdown sale timer flip board with scoreboard vector image"></noscript></a></li>
+						<li data-id="21824359" data-title="business planner of calendar job" data-src="https://cdn5.vectorstock.com/i/thumbs/43/59/business-planner-of-calendar-job-vector-21824359.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/business-planner-of-calendar-job-vector-21824359" title="business planner of calendar job vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/43/59/business-planner-of-calendar-job-vector-21824359.jpg" title="business planner of calendar job" alt="business planner of calendar job vector image"></noscript></a></li>
+						<li data-id="37198661" data-title="time management deadline brand event man" data-src="https://cdn2.vectorstock.com/i/thumbs/86/61/time-management-deadline-brand-event-man-vector-37198661.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/time-management-deadline-brand-event-man-vector-37198661" title="time management deadline brand event man vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/86/61/time-management-deadline-brand-event-man-vector-37198661.jpg" title="time management deadline brand event man" alt="time management deadline brand event man vector image"></noscript></a></li>
+						<li data-id="26937580" data-title="halloween on icons calendar october 31" data-src="https://cdn1.vectorstock.com/i/thumbs/75/80/halloween-on-icons-calendar-october-31-vector-26937580.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/halloween-on-icons-calendar-october-31-vector-26937580" title="halloween on icons calendar october 31 vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/75/80/halloween-on-icons-calendar-october-31-vector-26937580.jpg" title="halloween on icons calendar october 31" alt="halloween on icons calendar october 31 vector image"></noscript></a></li>
+						<li class="more"><div><a href="https://www.vectorstock.com/royalty-free-vectors/vectors-similar-to_21281060" rel="nofollow"><span class="lrg">More Images…</span><span class="sml">More</span></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div id="group-artist" class="group">
+				<h6><span class="icon"></span><strong>More by <a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_Delices_89" rel="nofollow">Delices_89</a></strong></h6>
+
+			<div class="gallery large">
+				<ul>
+						<li data-src="https://cdn1.vectorstock.com/i/thumb-large/76/70/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-20947670.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-20947670" title="done day planner and calendar app ui ux design ui vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumb-large/76/70/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-20947670.jpg" title="done day planner and calendar app ui ux design ui" alt="done day planner and calendar app ui ux design ui vector image"></noscript><img src="./12_files/done-day-planner-and-calendar-app-ui-ux-design-ui-vector-20947670.jpg"></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/10/38/calendar-day-planner-and-app-ui-ux-design-vector-21281038.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/calendar-day-planner-and-app-ui-ux-design-vector-21281038" title="calendar day planner and app ui ux design vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/10/38/calendar-day-planner-and-app-ui-ux-design-vector-21281038.jpg" title="calendar day planner and app ui ux design" alt="calendar day planner and app ui ux design vector image"></noscript><img src="./12_files/calendar-day-planner-and-app-ui-ux-design-vector-21281038.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/25/81/calendar-day-planner-and-app-ui-ux-design-vector-21262581.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/calendar-day-planner-and-app-ui-ux-design-vector-21262581" title="calendar day planner and app ui ux design vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/25/81/calendar-day-planner-and-app-ui-ux-design-vector-21262581.jpg" title="calendar day planner and app ui ux design" alt="calendar day planner and app ui ux design vector image"></noscript><img src="./12_files/calendar-day-planner-and-app-ui-ux-design-vector-21262581.jpg"></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/64/08/flat-user-interface-set-for-website-vector-22416408.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/flat-user-interface-set-for-website-vector-22416408" title="flat user interface set for website vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/64/08/flat-user-interface-set-for-website-vector-22416408.jpg" title="flat user interface set for website" alt="flat user interface set for website vector image"></noscript><img src="./12_files/flat-user-interface-set-for-website-vector-22416408.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/42/96/flat-user-interface-set-for-website-vector-22454296.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/flat-user-interface-set-for-website-vector-22454296" title="flat user interface set for website vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/42/96/flat-user-interface-set-for-website-vector-22454296.jpg" title="flat user interface set for website" alt="flat user interface set for website vector image"></noscript><img src="./12_files/flat-user-interface-set-for-website-vector-22454296.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/44/02/flat-user-interface-set-for-website-vector-22454402.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/flat-user-interface-set-for-website-vector-22454402" title="flat user interface set for website vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/44/02/flat-user-interface-set-for-website-vector-22454402.jpg" title="flat user interface set for website" alt="flat user interface set for website vector image"></noscript><img src="./12_files/flat-user-interface-set-for-website-vector-22454402.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/87/76/gradient-sample-set-colorful-gradients-for-poster-vector-21168776.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/gradient-sample-set-colorful-gradients-for-poster-vector-21168776" title="gradient sample set colorful gradients for poster vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/87/76/gradient-sample-set-colorful-gradients-for-poster-vector-21168776.jpg" title="gradient sample set colorful gradients for poster" alt="gradient sample set colorful gradients for poster vector image"></noscript><img src="./12_files/gradient-sample-set-colorful-gradients-for-poster-vector-21168776.jpg"></a></li>
+						<li data-src="https://cdn2.vectorstock.com/i/thumb-large/61/26/web-and-ui-calendar-with-clock-icon-vector-20806126.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/web-and-ui-calendar-with-clock-icon-vector-20806126" title="web and ui calendar with clock icon vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumb-large/61/26/web-and-ui-calendar-with-clock-icon-vector-20806126.jpg" title="web and ui calendar with clock icon" alt="web and ui calendar with clock icon vector image"></noscript><img src="./12_files/web-and-ui-calendar-with-clock-icon-vector-20806126.jpg"></a></li>
+						<li data-src="https://cdn3.vectorstock.com/i/thumb-large/11/22/set-of-calendar-widget-ui-for-mobile-app-vector-19401122.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/set-of-calendar-widget-ui-for-mobile-app-vector-19401122" title="set of calendar widget ui for mobile app vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumb-large/11/22/set-of-calendar-widget-ui-for-mobile-app-vector-19401122.jpg" title="set of calendar widget ui for mobile app" alt="set of calendar widget ui for mobile app vector image"></noscript></a></li>
+						<li data-src="https://cdn4.vectorstock.com/i/thumb-large/77/08/beautiful-color-gradient-collection-gradients-vector-22417708.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/beautiful-color-gradient-collection-gradients-vector-22417708" title="beautiful color gradient collection gradients vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumb-large/77/08/beautiful-color-gradient-collection-gradients-vector-22417708.jpg" title="beautiful color gradient collection gradients" alt="beautiful color gradient collection gradients vector image"></noscript></a></li>
+				</ul>
+			</div>
+				<div class="gallery small more">
+					<ul>
+						<li data-id="24936851" data-title="set flat design ui elements for website" data-src="https://cdn2.vectorstock.com/i/thumbs/68/51/set-flat-design-ui-elements-for-website-vector-24936851.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/set-flat-design-ui-elements-for-website-vector-24936851" title="set flat design ui elements for website vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/68/51/set-flat-design-ui-elements-for-website-vector-24936851.jpg" title="set flat design ui elements for website" alt="set flat design ui elements for website vector image vector image"></noscript><img src="./12_files/set-flat-design-ui-elements-for-website-vector-24936851.jpg"></a></li>
+						<li data-id="20795942" data-title="pack of flat design ui kit for webdesign" data-src="https://cdn3.vectorstock.com/i/thumbs/59/42/pack-of-flat-design-ui-kit-for-webdesign-vector-20795942.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/pack-of-flat-design-ui-kit-for-webdesign-vector-20795942" title="pack of flat design ui kit for webdesign vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/59/42/pack-of-flat-design-ui-kit-for-webdesign-vector-20795942.jpg" title="pack of flat design ui kit for webdesign" alt="pack of flat design ui kit for webdesign vector image vector image"></noscript><img src="./12_files/pack-of-flat-design-ui-kit-for-webdesign-vector-20795942.jpg"></a></li>
+						<li data-id="20873513" data-title="fitness app ui ux design web design and mobile" data-src="https://cdn4.vectorstock.com/i/thumbs/35/13/fitness-app-ui-ux-design-web-design-and-mobile-vector-20873513.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/fitness-app-ui-ux-design-web-design-and-mobile-vector-20873513" title="fitness app ui ux design web design and mobile vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/35/13/fitness-app-ui-ux-design-web-design-and-mobile-vector-20873513.jpg" title="fitness app ui ux design web design and mobile" alt="fitness app ui ux design web design and mobile vector image vector image"></noscript><img src="./12_files/fitness-app-ui-ux-design-web-design-and-mobile-vector-20873513.jpg"></a></li>
+						<li data-id="21037069" data-title="white ui kit set flat design ui kit" data-src="https://cdn5.vectorstock.com/i/thumbs/70/69/white-ui-kit-set-flat-design-ui-kit-vector-21037069.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/white-ui-kit-set-flat-design-ui-kit-vector-21037069" title="white ui kit set flat design ui kit vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/70/69/white-ui-kit-set-flat-design-ui-kit-vector-21037069.jpg" title="white ui kit set flat design ui kit" alt="white ui kit set flat design ui kit vector image vector image"></noscript><img src="./12_files/white-ui-kit-set-flat-design-ui-kit-vector-21037069.jpg"></a></li>
+						<li data-id="21933335" data-title="money transaction business mobile banking" data-src="https://cdn1.vectorstock.com/i/thumbs/33/35/money-transaction-business-mobile-banking-vector-21933335.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/money-transaction-business-mobile-banking-vector-21933335" title="money transaction business mobile banking vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/33/35/money-transaction-business-mobile-banking-vector-21933335.jpg" title="money transaction business mobile banking" alt="money transaction business mobile banking vector image vector image"></noscript><img src="./12_files/money-transaction-business-mobile-banking-vector-21933335.jpg"></a></li>
+						<li data-id="20883238" data-title="mobile ui ux design concept trendy chatbot" data-src="https://cdn4.vectorstock.com/i/thumbs/32/38/mobile-ui-ux-design-concept-trendy-chatbot-vector-20883238.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/mobile-ui-ux-design-concept-trendy-chatbot-vector-20883238" title="mobile ui ux design concept trendy chatbot vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/32/38/mobile-ui-ux-design-concept-trendy-chatbot-vector-20883238.jpg" title="mobile ui ux design concept trendy chatbot" alt="mobile ui ux design concept trendy chatbot vector image vector image"></noscript><img src="./12_files/mobile-ui-ux-design-concept-trendy-chatbot-vector-20883238.jpg"></a></li>
+						<li data-id="20919623" data-title="ui kit active button non" data-src="https://cdn4.vectorstock.com/i/thumbs/96/23/ui-kit-active-button-non-vector-20919623.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/ui-kit-active-button-non-vector-20919623" title="ui kit active button non vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/96/23/ui-kit-active-button-non-vector-20919623.jpg" title="ui kit active button non" alt="ui kit active button non vector image vector image"></noscript><img src="./12_files/ui-kit-active-button-non-vector-20919623.jpg"></a></li>
+						<li data-id="22454566" data-title="beautiful color gradient collection gradients" data-src="https://cdn2.vectorstock.com/i/thumbs/45/66/beautiful-color-gradient-collection-gradients-vector-22454566.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/beautiful-color-gradient-collection-gradients-vector-22454566" title="beautiful color gradient collection gradients vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/45/66/beautiful-color-gradient-collection-gradients-vector-22454566.jpg" title="beautiful color gradient collection gradients" alt="beautiful color gradient collection gradients vector image vector image"></noscript><img src="./12_files/beautiful-color-gradient-collection-gradients-vector-22454566.jpg"></a></li>
+						<li data-id="21173889" data-title="id application with icon of fingerprint and graph" data-src="https://cdn5.vectorstock.com/i/thumbs/38/89/id-application-with-icon-of-fingerprint-and-graph-vector-21173889.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/id-application-with-icon-of-fingerprint-and-graph-vector-21173889" title="id application with icon of fingerprint and graph vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/38/89/id-application-with-icon-of-fingerprint-and-graph-vector-21173889.jpg" title="id application with icon of fingerprint and graph" alt="id application with icon of fingerprint and graph vector image vector image"></noscript><img src="./12_files/id-application-with-icon-of-fingerprint-and-graph-vector-21173889.jpg"></a></li>
+						<li data-id="21168728" data-title="id application with icon of fingerprint and graph" data-src="https://cdn4.vectorstock.com/i/thumbs/87/28/id-application-with-icon-of-fingerprint-and-graph-vector-21168728.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/id-application-with-icon-of-fingerprint-and-graph-vector-21168728" title="id application with icon of fingerprint and graph vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/87/28/id-application-with-icon-of-fingerprint-and-graph-vector-21168728.jpg" title="id application with icon of fingerprint and graph" alt="id application with icon of fingerprint and graph vector image vector image"></noscript><img src="./12_files/id-application-with-icon-of-fingerprint-and-graph-vector-21168728.jpg"></a></li>
+						<li data-id="20165192" data-title="time widget" data-src="https://cdn3.vectorstock.com/i/thumbs/51/92/time-widget-vector-20165192.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/time-widget-vector-20165192" title="time widget vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/51/92/time-widget-vector-20165192.jpg" title="time widget" alt="time widget vector image vector image"></noscript><img src="./12_files/time-widget-vector-20165192.jpg"></a></li>
+						<li data-id="19437129" data-title="flat dashboard set of ui web infographic elements" data-src="https://cdn5.vectorstock.com/i/thumbs/71/29/flat-dashboard-set-of-ui-web-infographic-elements-vector-19437129.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/flat-dashboard-set-of-ui-web-infographic-elements-vector-19437129" title="flat dashboard set of ui web infographic elements vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/71/29/flat-dashboard-set-of-ui-web-infographic-elements-vector-19437129.jpg" title="flat dashboard set of ui web infographic elements" alt="flat dashboard set of ui web infographic elements vector image vector image"></noscript><img src="./12_files/flat-dashboard-set-of-ui-web-infographic-elements-vector-19437129.jpg"></a></li>
+						<li data-id="20470157" data-title="set of flat design ui and ux elements for website" data-src="https://cdn3.vectorstock.com/i/thumbs/01/57/set-of-flat-design-ui-and-ux-elements-for-website-vector-20470157.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/set-of-flat-design-ui-and-ux-elements-for-website-vector-20470157" title="set of flat design ui and ux elements for website vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/01/57/set-of-flat-design-ui-and-ux-elements-for-website-vector-20470157.jpg" title="set of flat design ui and ux elements for website" alt="set of flat design ui and ux elements for website vector image vector image"></noscript><img src="./12_files/set-of-flat-design-ui-and-ux-elements-for-website-vector-20470157.jpg"></a></li>
+						<li data-id="19437140" data-title="flat dashboard set of ui web infographic elements" data-src="https://cdn1.vectorstock.com/i/thumbs/71/40/flat-dashboard-set-of-ui-web-infographic-elements-vector-19437140.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/flat-dashboard-set-of-ui-web-infographic-elements-vector-19437140" title="flat dashboard set of ui web infographic elements vector image"><noscript><img src="https://cdn1.vectorstock.com/i/thumbs/71/40/flat-dashboard-set-of-ui-web-infographic-elements-vector-19437140.jpg" title="flat dashboard set of ui web infographic elements" alt="flat dashboard set of ui web infographic elements vector image vector image"></noscript><img src="./12_files/flat-dashboard-set-of-ui-web-infographic-elements-vector-19437140.jpg"></a></li>
+						<li data-id="19437108" data-title="user interface set for website development" data-src="https://cdn4.vectorstock.com/i/thumbs/71/08/user-interface-set-for-website-development-vector-19437108.jpg" class="reveal"><a href="https://www.vectorstock.com/royalty-free-vector/user-interface-set-for-website-development-vector-19437108" title="user interface set for website development vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/71/08/user-interface-set-for-website-development-vector-19437108.jpg" title="user interface set for website development" alt="user interface set for website development vector image vector image"></noscript><img src="./12_files/user-interface-set-for-website-development-vector-19437108.jpg"></a></li>
+						<li data-id="20464932" data-title="set of flat design ui and ux elements for website" data-src="https://cdn3.vectorstock.com/i/thumbs/49/32/set-of-flat-design-ui-and-ux-elements-for-website-vector-20464932.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/set-of-flat-design-ui-and-ux-elements-for-website-vector-20464932" title="set of flat design ui and ux elements for website vector image"><noscript><img src="https://cdn3.vectorstock.com/i/thumbs/49/32/set-of-flat-design-ui-and-ux-elements-for-website-vector-20464932.jpg" title="set of flat design ui and ux elements for website" alt="set of flat design ui and ux elements for website vector image vector image"></noscript></a></li>
+						<li data-id="25526564" data-title="phone chat interface sms messenger speech" data-src="https://cdn5.vectorstock.com/i/thumbs/65/64/phone-chat-interface-sms-messenger-speech-vector-25526564.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/phone-chat-interface-sms-messenger-speech-vector-25526564" title="phone chat interface sms messenger speech vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/65/64/phone-chat-interface-sms-messenger-speech-vector-25526564.jpg" title="phone chat interface sms messenger speech" alt="phone chat interface sms messenger speech vector image vector image"></noscript></a></li>
+						<li data-id="21218963" data-title="desk calendar simple colorful gradient minimal" data-src="https://cdn4.vectorstock.com/i/thumbs/89/63/desk-calendar-simple-colorful-gradient-minimal-vector-21218963.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/desk-calendar-simple-colorful-gradient-minimal-vector-21218963" title="desk calendar simple colorful gradient minimal vector image"><noscript><img src="https://cdn4.vectorstock.com/i/thumbs/89/63/desk-calendar-simple-colorful-gradient-minimal-vector-21218963.jpg" title="desk calendar simple colorful gradient minimal" alt="desk calendar simple colorful gradient minimal vector image vector image"></noscript></a></li>
+						<li data-id="20165064" data-title="calendar widget ui interface" data-src="https://cdn5.vectorstock.com/i/thumbs/50/64/calendar-widget-ui-interface-vector-20165064.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/calendar-widget-ui-interface-vector-20165064" title="calendar widget ui interface vector image"><noscript><img src="https://cdn5.vectorstock.com/i/thumbs/50/64/calendar-widget-ui-interface-vector-20165064.jpg" title="calendar widget ui interface" alt="calendar widget ui interface vector image vector image"></noscript></a></li>
+						<li data-id="20945191" data-title="phone chat interface sms messages speech" data-src="https://cdn2.vectorstock.com/i/thumbs/51/91/phone-chat-interface-sms-messages-speech-vector-20945191.jpg"><a href="https://www.vectorstock.com/royalty-free-vector/phone-chat-interface-sms-messages-speech-vector-20945191" title="phone chat interface sms messages speech vector image"><noscript><img src="https://cdn2.vectorstock.com/i/thumbs/51/91/phone-chat-interface-sms-messages-speech-vector-20945191.jpg" title="phone chat interface sms messages speech" alt="phone chat interface sms messages speech vector image vector image"></noscript></a></li>
+						<li class="more"><div><a href="https://www.vectorstock.com/royalty-free-vectors/vectors-by_Delices_89" rel="nofollow"><span class="lrg">More Images…</span><span class="sml">More</span></a></div></li>
+					</ul>
+				</div>
+			</div>
+			<div id="group-keywords" class="group">
+				<h6><span class="icon"></span><strong>Related Searches</strong></h6>
+				<ul>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/vector-vectors">Vector</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/design-vectors">Design</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/ui-vectors">Ui</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/app-vectors">App</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/calendar-vectors">Calendar</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/ux-vectors">Ux</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/done-vectors">Done</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/day-vectors">Day</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/planner-vectors">Planner</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/technology-vectors">Technology</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/mobile-vectors">Mobile</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/template-vectors">Template</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/white-vectors">White</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/background-vectors">Background</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/smart-vectors">Smart</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/dashboard-vectors">Dashboard</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/application-vectors">Application</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/element-vectors">Element</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/user-vectors">User</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/widget-vectors">Widget</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/symbol-vectors">Symbol</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/interface-vectors">Interface</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/screen-vectors">Screen</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/menu-vectors">Menu</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/icon-vectors">Icon</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/internet-vectors">Internet</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/layout-vectors">Layout</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/sign-vectors">Sign</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/phone-vectors">Phone</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/weather-vectors">Weather</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/web-vectors">Web</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/illustration-vectors">Illustration</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/business-vectors">Business</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/button-vectors">Button</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/flat-vectors">Flat</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/communication-vectors">Communication</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/login-vectors">Login</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/red-vectors">Red</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/plan-vectors">Plan</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/idea-vectors">Idea</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/blue-vectors">Blue</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/media-vectors">Media</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/chart-vectors">Chart</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/website-vectors">Website</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/smartphone-vectors">Smartphone</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/touch-vectors">Touch</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/device-vectors">Device</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/set-vectors">Set</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/material-vectors">Material</a></li>
+					<li><a href="https://www.vectorstock.com/royalty-free-vectors/form-vectors">Form</a></li>
+				</ul>
+			</div>
+		</section>
+	</article>
+
+	<!-- Footer -->
+	<footer>
+		<div>
+		<div class="column c1">
+			<nav class="company">
+				<h4>VectorStock</h4>
+				<ul>
+					<li><a href="https://www.vectorstock.com/" title="Home">Home</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/free-vectors" title="Free Vectors">Free Vectors</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/royalty-free-vectors" title="All Royalty-Free Vectors">All Vectors</a></li>
+				</ul>
+				<ul>
+					<li><a href="https://www.vectorstock.com/what-is-a-vector" title="What is a Vector?">What is a Vector?</a></li>
+				</ul>
+				<ul>
+					<li class="sel"><a href="https://www.vectorstock.com/faq" title="Frequently Asked Questions"><span class="long">Frequently Asked Questions</span><span class="short">FAQs</span></a></li>
+					<li><a href="https://www.vectorstock.com/faq/members/terms-of-use" title="Terms &amp; Conditions">Terms &amp; Conditions</a></li>
+					<li class="sel"><a href="https://www.vectorstock.com/contact" title="Contact Us">Contact Us</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="column c2">
+			<nav class="account">
+				<h4><span class="title">Account</span><span class="icon"></span></h4>
+					<ul>
+						<li><a href="https://www.vectorstock.com/signup" title="Join Now">Join Now</a></li>
+						<li><a href="https://www.vectorstock.com/pricing" title="Pricing">Pricing</a></li>
+						<li><a href="https://www.vectorstock.com/?signup=1&amp;contributor=1" title="Contributor Sign Up">Contributor Sign Up</a></li>
+						<li><a href="https://www.vectorstock.com/faq/artists/why-sell-at-vectorstock" title="Contributor FAQ">Contributor FAQ</a></li>
+					</ul>
+			</nav>
+		</div>
+		<div class="column c3">
+			<nav class="social">
+				<h4>Social</h4>
+				<ul>
+					<li class="facebook sel"><a href="https://www.facebook.com/VectorStock" target="_blank" rel="noreferrer"><span class="title">Facebook</span><span class="icon"></span></a></li>
+					<li class="pinterest sel"><a href="https://pinterest.com/vectorstock/" target="_blank" rel="noreferrer"><span class="title">Pinterest</span><span class="icon"></span></a></li>
+					<li class="twitter sel"><a href="https://twitter.com/VectorStock" target="_blank" rel="noreferrer"><span class="title">Twitter</span><span class="icon"></span></a></li>
+				</ul>
+			</nav>
+			<div class="signoff">
+				<h5><a href="https://www.vectorstock.com/" title="VectorStock®">VectorStock®</a></h5>
+				<p>VectorStock and the VectorStock logo are registered trademarks of VectorStock Media.<br>
+				© 2021. <span>All Rights Reserved.</span></p>
+			</div>
+		</div>
+		</div>
+	</footer>
+
+
+	<script type="text/javascript" nonce="VUJJs6TsA3uHkSAMmnXUAUqJ2jVbEK/UY39XxHnUBjI=">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"02e09611df","applicationID":"156179534","transactionName":"ZV0ENRYCC0RYAkVbDVwXJRQXFwpaFhNeSwNeTB9MAhEAUhQXVFEWXUpJFw0GEg==","queueTime":0,"applicationTime":45,"atts":"SRoHQ14YGEo=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script>
+
+
+
+</body></html>

@@ -1,0 +1,200 @@
+.form-control{
+    display: block;
+    appearance: none;
+    border: none;
+    background: whitesmoke;
+    font-family: 'Times New Roman', Times, serif'
+}
+#search{
+    display: block;
+    appearance: none;
+    border: none;
+    background: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+#button-addon2{
+    display: block;
+    appearance: none;
+    border: none;
+    background-color: blue;
+    font-family: 'Times New Roman', Times, serif;
+}
+#nav{
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+:root{
+  --offcanvas-width:270px;
+  --topNavbarHeight:56px;
+}
+.sidebar-nav{
+    width:var( --offcanvas-width ) !important;
+    color: black;
+}
+.sidebar-link{
+    display:flex !important;
+    align-items: center !;
+    color: black;
+}
+
+
+.sidebar-link .right-icon{
+    display: inline-flex;
+    transition: all ease 0.25s;
+    color: black;
+}
+
+.sidebar-link[aria-expanded="true"]  .right-icon {
+    transform: rotate(180deg);
+}
+
+@media (min-width:992px) {
+    body{
+        overflow: auto !important;
+        color: black;
+    }
+   .offcanvas-backdrop::before{
+       display: none;
+   }
+   main{
+       margin-left:var(--offcanvas-width) ;
+   }
+    .sidebar-nav{
+       transform: none;
+       visibility: visible !important;
+       top:var(--topNavbarHeight) ;
+       height: calc(100% -var(--topNavbarHeight));
+       color: black !important;
+    }
+}
+body {
+    height: 100vh;
+    display: grid;
+    place-items: left;
+    font-family: var(--font-family);
+    background-color: var(--bg-body);
+    font-family: cursive;
+    background-color:rgb(0, 0, 0);
+    color: black;
+    font-family: cursive;
+    font-size: small;
+    margin: 0;
+    position: relative;
+    margin-top: 50px;
+    
+}
+
+#container1{
+    width: 100%;
+    height: 100vh;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight:lighter;
+}
+
+.calendar{
+    width: 40rem;
+    height: 52rem;
+    background-color: #222227;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.month{
+    width: 100%;
+    height: 12rem;
+    background-color:#167e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    text-shadow:0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.month h1{
+    font-size: 3rem;
+    font-weight:50;
+    text-transform: uppercase;
+    letter-spacing:0.1rem;
+    margin-bottom: 1rem;
+}
+
+.month p{
+    font-size:1.3rem ;
+}
+
+.Weekdays{
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+}
+
+.Weekdays div{
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing:0.1rem;
+    width: calc(40.2rem / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.1rem;
+}
+
+.days div{
+    font-size: 1.2rem;
+    margin: 0.3rem;
+    width: calc(39.2rem / 7);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s;
+}
+.days div:hover:not(.today){
+    background-color: #262626;
+    border:0.2rem solid #777;
+    cursor: pointer;
+}
+
+.prev-date,
+.next-date 
+{
+    opacity: 0.5;
+}
+
+.today{
+background-color: #167e;
+}
+
+
+
+
+  
+
+  
+
+
+

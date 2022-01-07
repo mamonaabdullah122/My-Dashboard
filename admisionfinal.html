@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminLTE Template</title>
+  <link rel="stylesheet" href="./javascript files/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./public/Dashboard.css">
+   <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css"> 
+   <link
+       href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+       rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/sb-admin-2.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+  
+     <!-- Navbar -->
+   
+      <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top" >
+        <div class="container-fluid">
+
+     
+    
+   
+          <!-- Offcanvas Trigger -->
+          <button
+           class="navbar-toggler me-2" 
+           type="button"
+            data-bs-toggle="offcanvas"
+             data-bs-target="#offcanvasExample"
+             aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"data-bs-target="#offcanvasExample" ></span>
+           
+          </button>
+          <!-- Offcanvas Trigger -->
+        
+          <a class="navbar-brand fw-bold text-uppercase bg-dark" 
+          href="#">DASHBOARD</a>
+          <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent"
+           aria-expanded="false" 
+           aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div id="collapseExample"></div>
+            <form class="d-flex ms-auto">
+                <div class="input-group my-3 my-lg-0">
+                    <input type="text"
+                     class="form-control" 
+                     placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button 
+                    class="btn btn-primary" 
+                    type="button" 
+                    id="button-addon2"
+                    ><i class="bi bi-search"></i>
+                </button>
+                  </div>
+            </form>
+         <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person-fill"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Admision Form -->
+
+      <div class="container-fluid" style="width: 100vw; height: 100vh;">
+        <div class="card o-hidden border-0 shadow-lg my-5">
+            <div class="card-body p-0">
+                <!-- Nested Row within Card Body -->
+                <div class="row">
+                   <div class="col-lg-2" ></div>
+                    <div class="col-lg-10">
+                        <div class="p-4">
+                                <h1 class="h4 text-black-900 mb-3"></h1>
+                                <div class="text-center">
+                                    <h1>Admision Form</h1> 
+                                </div>
+                            
+                            <form class="user">
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="exampleFirstName"
+                                            placeholder="First Name">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user" id="exampleLastName"
+                                            placeholder="Last Name">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="text" class="form-control form-control-user" id="exampleRollNumber"
+                                            placeholder="Roll Number">
+                                    </div>
+                               
+                                <div class="col-sm-6">
+                                        <input type="text" class="form-control form-control-user" id="exampleGender"
+                                            placeholder="Gender">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-sm-6 mb-3 mb-sm-0">
+                                    <input type="text" class="form-control form-control-user" id="exampleDate of Birth"
+                                        placeholder="Date of Birth">
+                                </div>
+                           
+                            <div class="col-sm-6">
+                                    <input type="text" class="form-control form-control-user" id="exampleBloodGroup"
+                                        placeholder="Blood Group">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6 mb-3 mb-sm-0">
+                                <input type="text" class="form-control form-control-user" id="exampleReligous"
+                                    placeholder="Religous">
+                            </div>
+                       
+                        <div class="col-sm-6">
+                                <input type="text" class="form-control form-control-user" id="exampleEmailAddress"
+                                    placeholder="EmailAddress">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6 mb-3 mb-sm-0">
+                            <input type="text" class="form-control form-control-user" id="exampleClass"
+                                placeholder="Class">
+                        </div>
+                   
+                    <div class="col-sm-6">
+                            <input type="text" class="form-control form-control-user" id="exampleSection"
+                                placeholder="Section">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-6 mb-3 mb-sm-0">
+                        <input type="text" class="form-control form-control-user" id="exampleAdmisionId"
+                            placeholder="Admision Id">
+                    </div>
+               
+                <div class="col-sm-6">
+                        <input type="text" class="form-control form-control-user" id="examplePhone"
+                            placeholder="Phone">
+                </div>
+            </div>
+                                
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleInputPassword" placeholder="Password">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="password" class="form-control form-control-user"
+                                            id="exampleRepeatPassword" placeholder="Repeat Password">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-sm-6 mb-3 mb-sm-0"></div>
+                                    <input type="email" class="form-control form-control-user" id="exampleInputAddress"
+                                        placeholder="Address">
+                                </div>
+                               <div class="form-group row">
+                                   <div class="col-sm-4 mb-4 mb-sm-0">
+                                    <label>Image Upload</label>
+                                    <textarea class="textarea form-control" name="message" id="form-message" cols="10" rows="9"></textarea>
+                                </div>
+                                <div class="col-sm-4 mb-4 mb-sm-0">
+                                    <label>BIO Data</label>
+                                    <textarea class="textarea form-control" name="message" id="form-message" cols="10" rows="9"></textarea>
+                                </div>
+                                    <div class="col-sm-2" style="margin-top: 60px; margin-right: 50px; margin-left: 150px;">
+                                        <a href="login.html" class="btn btn-primary btn-user btn-block">
+                                            Register Account
+                                        </a>
+                                        <a href="index.html" class="btn btn-google btn-user btn-block">
+                                            <i class="fab fa-google fa-fw"></i> Register with Google
+                                        </a>
+                                        <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                                            <i class="fab fa-facebook-f fa-fw"></i> Register with Facebook
+                                        </a>
+                                </div>
+                            </div>
+                            </form>
+                            <hr>
+                            <div class="text-center ">
+                                <a class="small bg-white" href="forgot-password.html">Forgot Password?</a>
+                            </div>
+                            <div class="text-center ">
+                                <a class="small bg-white" href="login.html">Already have an account? Login!</a>
+                                <a class="small bg-white" href="Dashboard.html">Home Page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+   <!-- Navbar -->
+      <!-- Offcanvas -->
+      <div class="offcanvas offcanvas-start bg-black text-white sidebar-nav"
+       tabindex="-1" 
+       id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body p-0">
+          <nav class="navbar-dark">
+         <ul class="navbar-nav">
+          <li>
+            <a href="admisionfinal.html" class="nav-link"></a>
+            <img src="./img/q.png" alt=""  style="width: 150px; height: 100px;">
+           <li>
+          
+            <a href="#" class="nav-link px-3 active">
+             
+              <a class="nav-link px-3 sidebar-link"
+              data-bs-toggle="collapse"
+               href="#collapseExample" 
+               role="button" 
+               aria-expanded="false"
+               aria-controls="collapseExample">
+               <span class="me-2" style="color: gold;">
+                <i class="bi bi-speedometer2"></i>
+              </span>
+              <span>Dashboard</span>
+                 <span class="right-icon ms-auto" style="color: gold;">
+              <i class="bi bi-chevron-down"></i>
+             </span>
+              
+             </a>
+          
+              </a>
+            <p>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div>
+                <ul class="navbar-nav ps-3">
+                  <li>
+                    <a href="#" class="nav-link">
+                      <span class="me-2" style="color: gold;">
+                        <i class="bi bi-chevron-right"></i>
+                      </span>
+                      <span>Admin</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">
+                      <span class="me-2" style="color: gold;">
+                        <i class="bi bi-chevron-right"></i>
+                      </span>
+                      <span>Students</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">
+                      <span class="me-2" style="color: gold;">
+                        <i class="bi bi-chevron-right"></i>
+                      </span>
+                      <span>Parrents</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">
+                      <span class="me-2" style="color: gold;">
+                        <i class="bi bi-chevron-right"></i>
+                      </span>
+                      <span>Teachers</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+           </li>
+           <a href="#" class="nav-link px-3 active">
+             
+            <a class="nav-link px-3 sidebar-link"
+            data-bs-toggle="collapse"
+             href="#collapseExample1" 
+             role="button" 
+             aria-expanded="false"
+             aria-controls="collapseExample">
+             <span class="me-2" style="color: gold;">
+              <i class="bi bi-people-fill"></i>
+            </span>
+            <span>Students</span>
+               <span class="right-icon ms-auto" style="color: gold;">
+            <i class="bi bi-chevron-down"></i>
+           </span>
+            
+           </a>
+        
+            </a>
+          <p>
+          </p>
+          <div class="collapse" id="collapseExample1">
+            <div>
+              <ul class="navbar-nav ps-3">
+                <li>
+                  <a href="allstudentstable.html" class="nav-link">
+                    <span class="me-2" style="color: gold;">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                    <span>All Students</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="studentdetail.html" class="nav-link">
+                    <span class="me-2" style="color: gold;">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                    <span>Students Details</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="admisionform.html" class="nav-link">
+                    <span class="me-2" style="color: gold;">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                    <span>Admision Form</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">
+                    <span class="me-2" style="color: gold;">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                    <span>Student Permotion</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+         </li>
+         <a href="#" class="nav-link px-3 active">
+             
+          <a class="nav-link px-3 sidebar-link"
+          data-bs-toggle="collapse"
+           href="#collapseExample2" 
+           role="button" 
+           aria-expanded="false"
+           aria-controls="collapseExample">
+           <span class="me-2" style="color: gold;">
+            <i class="bi bi-person-circle"></i>
+          </span>
+          <span>Teachers</span>
+             <span class="right-icon ms-auto" style="color: gold;">
+          <i class="bi bi-chevron-down"></i>
+         </span>
+          
+         </a>
+      
+          </a>
+        <p>
+        </p>
+        <div class="collapse" id="collapseExample2">
+          <div>
+            <ul class="navbar-nav ps-3">
+              <li>
+                <a href="allteachers.html" class="nav-link">
+                  <span class="me-2" style="color: gold;">
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <span>All Teachers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <span class="me-2" style="color: gold;">
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <span>Teachers Details</span>
+                </a>
+              </li>
+              <li>
+                <a href="addclass.html" class="nav-link">
+                  <span class="me-2" style="color: gold;">
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <span>Add Teachers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <span class="me-2" style="color: gold;">
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <span>Payment</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+       </li>
+       <a href="#" class="nav-link px-3 active">
+             
+        <a class="nav-link px-3 sidebar-link"
+        data-bs-toggle="collapse"
+         href="#collapseExample3" 
+         role="button" 
+         aria-expanded="false"
+         aria-controls="collapseExample">
+         <span class="me-2" style="color: gold;">
+          <i class="bi bi-person"></i>
+        </span>
+        <span>Parents</span>
+           <span class="right-icon ms-auto" style="color: gold;">
+        <i class="bi bi-chevron-down"></i>
+       </span>
+        
+       </a>
+    
+        </a>
+      <p>
+      </p>
+      <div class="collapse" id="collapseExample3">
+        <div>
+          <ul class="navbar-nav ps-3">
+            <li>
+              <a href="allparents.html" class="nav-link">
+                <span class="me-2" style="color: gold;">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+                <span>All Parents</span>
+              </a>
+            </li>
+            <li>
+              <a href="admisionform.html" class="nav-link">
+                <span class="me-2" style="color: gold;">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+                <span>Parents Details</span>
+              </a>
+            </li>
+            <li>
+              <a href="addclass.html" class="nav-link">
+                <span class="me-2" style="color: gold;">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+                <span>Add Parents</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+     </li>
+     <a href="#" class="nav-link px-3 active">
+             
+      <a class="nav-link px-3 sidebar-link"
+      data-bs-toggle="collapse"
+       href="#collapseExample4" 
+       role="button" 
+       aria-expanded="false"
+       aria-controls="collapseExample">
+       <span class="me-2"  style="color: gold;">
+        <i class="bi bi-book"></i>
+      </span>
+      <span>Library</span>
+         <span class="right-icon ms-auto"  style="color: gold;">
+      <i class="bi bi-chevron-down"></i>
+     </span>
+      
+     </a>
+  
+      </a>
+    <p>
+    </p>
+    <div class="collapse" id="collapseExample4">
+      <div>
+        <ul class="navbar-nav ps-3">
+          <li>
+            <a href="allbooks.html" class="nav-link">
+              <span class="me-2"  style="color: gold;">
+                <i class="bi bi-chevron-right"></i>
+              </span>
+              <span>All Books</span>
+            </a>
+          </li>
+          <li>
+            <a href="addclass.html" class="nav-link">
+              <span class="me-2"  style="color: gold;">
+                <i class="bi bi-chevron-right"></i>
+              </span>
+              <span>Add New Books</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+   </li>
+   <a href="#" class="nav-link px-3 active">
+             
+    <a class="nav-link px-3 sidebar-link"
+    data-bs-toggle="collapse"
+     href="#collapseExample5" 
+     role="button" 
+     aria-expanded="false"
+     aria-controls="collapseExample">
+     <span class="me-2" style="color: gold;">
+      <i class="bi bi-calculator"></i>
+    </span>
+    <span>Account</span>
+       <span class="right-icon ms-auto" style="color: gold;">
+    <i class="bi bi-chevron-down"></i>
+   </span>
+    
+   </a>
+
+    </a>
+  <p>
+  </p>
+  <div class="collapse" id="collapseExample5">
+    <div>
+      <ul class="navbar-nav ps-3">
+        <li>
+          <a href="account.html" class="nav-link">
+            <span class="me-2" style="color: gold;">
+              <i class="bi bi-chevron-right"></i>
+            </span>
+            <span>All Fee Collection</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <span class="me-2" style="color: gold;">
+              <i class="bi bi-chevron-right"></i>
+            </span>
+            <span>Expanses</span>
+          </a>
+        </li>
+        <li>
+          <a href="addclass.html" class="nav-link">
+            <span class="me-2" style="color: gold;">
+              <i class="bi bi-chevron-right"></i>
+            </span>
+            <span>Add Expanses</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+ </li>
+ <a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample6" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2"  style="color: gold;">
+    <i class="bi bi-pencil-square"></i>
+  </span>
+  <span>Classes</span>
+     <span class="right-icon ms-auto"  style="color: gold;">
+  <i class="bi bi-chevron-down"></i>
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample6">
+  <div>
+    <ul class="navbar-nav ps-3">
+      <li>
+        <a href="allclasses.html" class="nav-link">
+          <span class="me-2"  style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>All Classes</span>
+        </a>
+      </li>
+      <li>
+        <a href="addclass.html" class="nav-link">
+          <span class="me-2"  style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Add New Class</span>
+        </a>
+    </ul>
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample7" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2"  style="color: gold;">
+    <i class="bi bi-journals"></i>
+  </span>
+  <span>Subjects</span>
+     <span class="right-icon ms-auto"  style="color: gold;">
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample7">
+  <div>
+    <ul class="navbar-nav ps-3">
+    </ul>
+  </div>
+</div>
+
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample8" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-archive"></i>
+  </span>
+  <span>Class Routine</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+ </span>
+  
+ </a>
+
+  </a>
+
+<div class="collapse" id="collapseExample8">
+  <div>
+   
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample9" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-card-list"></i>
+  </span>
+  <span>Attendence</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample9">
+  <div>
+  
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample10" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-card-checklist"></i>
+  </span>
+  <span>Exam</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+  <i class="bi bi-chevron-down"></i>
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample10">
+  <div>
+    <ul class="navbar-nav ps-3">
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Exam Schedule</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right" style="color: gold;"></i>
+          </span>
+          <span>Exam Grades</span>
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample11" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-truck"></i>
+  </span>
+  <span>Transport</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample11">
+  <div>
+  
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample12" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-building"></i>
+  </span>
+  <span>Hostel</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+ 
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample12">
+  <div>
+
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample13" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-files"></i>
+
+  </span>
+  <span>Notice</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+
+ </span>
+  
+ </a>
+
+  </a>
+
+<div class="collapse" id="collapseExample13">
+  <div>
+  
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample14" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-chat"></i>
+  </span>
+  <span>Massages</span>
+     <span class="right-icon ms-auto">
+
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample14">
+  <div>
+ 
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample15" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-broadcast-pin"></i>
+  </span>
+  <span>Ul Element</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+  <i class="bi bi-chevron-down" style="color: gold;"></i>
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample15">
+  <div>
+    <ul class="navbar-nav ps-3">
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Alart</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Button</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Grid</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Modals</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Progress Bar</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Tab</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Widget</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample16" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-map"></i>
+  </span>
+  <span>Map</span>
+     <span class="right-icon ms-auto">
+ 
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample16">
+  <div>
+   
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample16" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-person-rolodex"></i>
+  </span>
+  <span>Account</span>
+     <span class="right-icon ms-auto">
+ 
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample16">
+  <div>
+   
+  </div>
+</div>
+</li>
+
+ <!-- Offcanvas -->
+
+
+
+
+
+<script src="../javascript files/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+
+ <!-- Bootstrap core JavaScript-->
+ <script src="vendor/jquery/jquery.min.js"></script>
+ <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+ <!-- Core plugin JavaScript-->
+ <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+ <!-- Custom scripts for all pages-->
+ <script src="js-1/sb-admin-2.min.js"></script>
+
+</body>
+</html>

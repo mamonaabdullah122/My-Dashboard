@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./javascript files/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="./javascript files/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet"type="text/css" href="./cal/calapp.css"> 
+     <link rel="stylesheet" href="../public/Dashboard.css">
+     <link rel="stylesheet" href="datastyle.css">
+     <script src="main.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+     <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/locale/af.min.js" integrity="sha512-lnYINW0FnmQ7QKM2C5b94J7Ev9xp80zvVPs5qY2dImqaUVAyPiGUtZdSks9UsKixpl0G+Vee3Aps3XqOGm4LDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="./finalprofile.css">
+
+<style>
+  
+</style>
+</head>
+<body>
+     <!-- Navbar -->
+   
+     <nav class="navbar navbar-expand-md navbar-dark bg-black fixed-top" >
+        <div class="container-fluid">
+
+     
+    
+   
+          <!-- Offcanvas Trigger -->
+          <button
+           class="navbar-toggler me-2" 
+           type="button"
+            data-bs-toggle="offcanvas"
+             data-bs-target="#offcanvasExample"
+             aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"data-bs-target="#offcanvasExample" ></span>
+           
+          </button>
+          <!-- Offcanvas Trigger -->
+        
+          <a class="navbar-brand fw-bold text-uppercase bg-dark" 
+          href="#">DASHBOARD</a>
+          <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent"
+           aria-expanded="false" 
+           aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div id="collapseExample"></div>
+            <form class="d-flex ms-auto">
+                <div class="input-group my-3 my-lg-0">
+                    <input type="text"
+                     class="form-control" 
+                     placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button 
+                    class="btn btn-primary" 
+                    type="button" 
+                    id="button-addon2"
+                    ><i class="bi bi-search"></i>
+                </button>
+                  </div>
+            </form>
+         <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person-fill"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<!-- profile -->
+    <div class="container">
+        <div class="main-body">
+        
+              <!-- Breadcrumb -->
+              <nav aria-label="breadcrumb" class="main-breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                  <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+                </ol>
+              </nav>
+              <!-- /Breadcrumb -->
+        
+              <div class="row gutters-sm">
+                <div class="col-md-4 mb-3 mt-5">
+                  <div class="card">
+                    <div class="card-body mt-2">
+                      <div class="d-flex flex-column align-items-center text-center">
+                        <img src="../img/56.png" alt="" class="rounded-circle" width="100" style="align-items: center;">
+                        <div class="mt-4">
+                          <h4>Sakura</h4>
+                          <p class="text-secondary mb-1">Full Stack Developer</p>
+                          <p class="text-muted font-size-sm">Bay Area, San Francisco, CA</p>
+                          <button class="btn btn-primary">Follow</button>
+                          <button class="btn btn-outline-primary">Message</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card mt-3">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                        <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-globe mr-2 icon-inline"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>Website</h6>
+                        <span class="text-secondary">https://bootdey.com</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                        <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github mr-2 icon-inline"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>Github</h6>
+                        <span class="text-secondary">bootdey</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                        <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-twitter mr-2 icon-inline text-info"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg>Twitter</h6>
+                        <span class="text-secondary">@bootdey</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                        <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram mr-2 icon-inline text-danger"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>Instagram</h6>
+                        <span class="text-secondary">bootdey</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                        <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook mr-2 icon-inline text-primary"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>Facebook</h6>
+                        <span class="text-secondary">bootdey</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <div style="text-align: center;">
+                    <h1>Teachers Details</h1>
+                  </div>
+                  <div class="card mb-3 mt-3">
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Emp Id</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                        1008
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Gender</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                        Femail
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Father Name</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                         Harono
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Mother Name</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                         Koranai
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Date Of Birth</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                         19-5-1987
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Religous</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                        Non Muslim
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Father Occupation</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                       Graphic Designer
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">E-mail</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                        SakuraHarona@gmail.com
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Admision Date</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                         7.08.2019
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Class</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                         5
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Section</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                       Green
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Name</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                    Sakura Harona
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Phone</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                         + 03216675036
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <h6 class="mb-0">Address</h6>
+                        </div>
+                        <div class="col-sm-9 text-secondary">
+                         House#10,Road#6,Australia
+                        </div>
+                      </div>
+                      <br>
+                      <div class="row">
+                        <div class="col-sm-12">
+                          <a class="btn btn-info " target="__blank" href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+    
+                  <div class="row gutters-sm">
+                    <div class="col-sm-6 mb-3">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">assignment</i>Project Status</h6>
+                          <small>Web Design</small>
+                          <div class="progress mb-3" style="height: 5px">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <small>Website Markup</small>
+                          <div class="progress mb-3" style="height: 5px">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <small>One Page</small>
+                          <div class="progress mb-3" style="height: 5px">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <small>Mobile Template</small>
+                          <div class="progress mb-3" style="height: 5px">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <small>Backend API</small>
+                          <div class="progress mb-3" style="height: 5px">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 mb-3">
+                      <div class="card h-100">
+                        <div class="card-body">
+                          <h6 class="d-flex align-items-center mb-3"><i class="material-icons text-info mr-2">assignment</i>Project Status</h6>
+                          <small>Web Design</small>
+                          <div class="progress mb-3" style="height: 5px">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <small>Website Markup</small>
+                          <div class="progress mb-3" style="height: 5px">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 72%" aria-valuenow="72" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <small>One Page</small>
+                          <div class="progress mb-3" style="height: 5px">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 89%" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <small>Mobile Template</small>
+                          <div class="progress mb-3" style="height: 5px">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                          <small>Backend API</small>
+                          <div class="progress mb-3" style="height: 5px">
+                            <div class="progress-bar bg-primary" role="progressbar" style="width: 66%" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      <!-- Navbar -->
+      <!-- Offcanvas -->
+      <div class="offcanvas offcanvas-start bg-black text-white sidebar-nav"
+       tabindex="-1" 
+       id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body p-0">
+          <nav class="navbar-dark">
+         <ul class="navbar-nav">
+          <li>
+          <img src="../img/q.png" alt="" style="height:100px; width: 150px;">
+           <li>
+          
+            <a href="#" class="nav-link px-3 active">
+             
+              <a class="nav-link px-3 sidebar-link"
+              data-bs-toggle="collapse"
+               href="#collapseExample" 
+               role="button" 
+               aria-expanded="false"
+               aria-controls="collapseExample">
+               <span class="me-2" style="color: gold;">
+                <i class="bi bi-speedometer2"></i>
+              </span>
+              <span>Dashboard</span>
+                 <span class="right-icon ms-auto" style="color: gold;">
+              <i class="bi bi-chevron-down"></i>
+             </span>
+              
+             </a>
+          
+              </a>
+            <p>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div>
+                <ul class="navbar-nav ps-3">
+                  <li>
+                    <a href="#" class="nav-link">
+                      <span class="me-2" style="color: gold;">
+                        <i class="bi bi-chevron-right"></i>
+                      </span>
+                      <span>Admin</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">
+                      <span class="me-2" style="color: gold;">
+                        <i class="bi bi-chevron-right"></i>
+                      </span>
+                      <span>Students</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">
+                      <span class="me-2" style="color: gold;">
+                        <i class="bi bi-chevron-right"></i>
+                      </span>
+                      <span>Parrents</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">
+                      <span class="me-2" style="color: gold;">
+                        <i class="bi bi-chevron-right"></i>
+                      </span>
+                      <span>Teachers</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+           </li>
+           <a href="#" class="nav-link px-3 active">
+             
+            <a class="nav-link px-3 sidebar-link"
+            data-bs-toggle="collapse"
+             href="#collapseExample1" 
+             role="button" 
+             aria-expanded="false"
+             aria-controls="collapseExample">
+             <span class="me-2" style="color: gold;">
+              <i class="bi bi-people-fill"></i>
+            </span>
+            <span>Students</span>
+               <span class="right-icon ms-auto" style="color: gold;">
+            <i class="bi bi-chevron-down"></i>
+           </span>
+            
+           </a>
+        
+            </a>
+          <p>
+          </p>
+          <div class="collapse" id="collapseExample1">
+            <div>
+              <ul class="navbar-nav ps-3">
+                <li>
+                  <a href="allstudentstable.html" class="nav-link">
+                    <span class="me-2" style="color: gold;">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                    <span>All Students</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="studentdetail.html" class="nav-link">
+                    <span class="me-2" style="color: gold;">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                    <span>Students Details</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="admisionfinal.html" class="nav-link">
+                    <span class="me-2" style="color: gold;">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                    <span>Admision Form</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">
+                    <span class="me-2" style="color: gold;">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                    <span>Student Permotion</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+         </li>
+         <a href="#" class="nav-link px-3 active">
+             
+          <a class="nav-link px-3 sidebar-link"
+          data-bs-toggle="collapse"
+           href="#collapseExample2" 
+           role="button" 
+           aria-expanded="false"
+           aria-controls="collapseExample">
+           <span class="me-2" style="color: gold;">
+            <i class="bi bi-person-circle"></i>
+          </span>
+          <span>Teachers</span>
+             <span class="right-icon ms-auto" style="color: gold;">
+          <i class="bi bi-chevron-down"></i>
+         </span>
+          
+         </a>
+      
+          </a>
+        <p>
+        </p>
+        <div class="collapse" id="collapseExample2">
+          <div>
+            <ul class="navbar-nav ps-3">
+              <li>
+                <a href="allteachers.html" class="nav-link">
+                  <span class="me-2" style="color: gold;">
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <span>All Teachers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <span class="me-2" style="color: gold;">
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <span>Teachers Details</span>
+                </a>
+              </li>
+              <li>
+                <a href="addclass.html" class="nav-link">
+                  <span class="me-2" style="color: gold;">
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <span>Add Teachers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <span class="me-2" style="color: gold;">
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <span>Payment</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+       </li>
+       <a href="#" class="nav-link px-3 active">
+             
+        <a class="nav-link px-3 sidebar-link"
+        data-bs-toggle="collapse"
+         href="#collapseExample3" 
+         role="button" 
+         aria-expanded="false"
+         aria-controls="collapseExample">
+         <span class="me-2" style="color: gold;">
+          <i class="bi bi-person"></i>
+        </span>
+        <span>Parents</span>
+           <span class="right-icon ms-auto" style="color: gold;">
+        <i class="bi bi-chevron-down"></i>
+       </span>
+        
+       </a>
+    
+        </a>
+      <p>
+      </p>
+      <div class="collapse" id="collapseExample3">
+        <div>
+          <ul class="navbar-nav ps-3">
+            <li>
+              <a href="allparents.html" class="nav-link">
+                <span class="me-2" style="color: gold;">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+                <span>All Parents</span>
+              </a>
+            </li>
+            <li>
+              <a href="admisionform.html" class="nav-link">
+                <span class="me-2" style="color: gold;">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+                <span>Parents Details</span>
+              </a>
+            </li>
+            <li>
+              <a href="addclass.html" class="nav-link">
+                <span class="me-2" style="color: gold;">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+                <span>Add Parents</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+     </li>
+     <a href="#" class="nav-link px-3 active">
+             
+      <a class="nav-link px-3 sidebar-link"
+      data-bs-toggle="collapse"
+       href="#collapseExample4" 
+       role="button" 
+       aria-expanded="false"
+       aria-controls="collapseExample">
+       <span class="me-2"  style="color: gold;">
+        <i class="bi bi-book"></i>
+      </span>
+      <span>Library</span>
+         <span class="right-icon ms-auto"  style="color: gold;">
+      <i class="bi bi-chevron-down"></i>
+     </span>
+      
+     </a>
+  
+      </a>
+    <p>
+    </p>
+    <div class="collapse" id="collapseExample4">
+      <div>
+        <ul class="navbar-nav ps-3">
+          <li>
+            <a href="allbooks.html" class="nav-link">
+              <span class="me-2"  style="color: gold;">
+                <i class="bi bi-chevron-right"></i>
+              </span>
+              <span>All Books</span>
+            </a>
+          </li>
+          <li>
+            <a href="addclass.html" class="nav-link">
+              <span class="me-2"  style="color: gold;">
+                <i class="bi bi-chevron-right"></i>
+              </span>
+              <span>Add New Books</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+   </li>
+   <a href="#" class="nav-link px-3 active">
+             
+    <a class="nav-link px-3 sidebar-link"
+    data-bs-toggle="collapse"
+     href="#collapseExample5" 
+     role="button" 
+     aria-expanded="false"
+     aria-controls="collapseExample">
+     <span class="me-2" style="color: gold;">
+      <i class="bi bi-calculator"></i>
+    </span>
+    <span>Account</span>
+       <span class="right-icon ms-auto" style="color: gold;">
+    <i class="bi bi-chevron-down"></i>
+   </span>
+    
+   </a>
+
+    </a>
+  <p>
+  </p>
+  <div class="collapse" id="collapseExample5">
+    <div>
+      <ul class="navbar-nav ps-3">
+        <li>
+          <a href="account.html" class="nav-link">
+            <span class="me-2" style="color: gold;">
+              <i class="bi bi-chevron-right"></i>
+            </span>
+            <span>All Fee Collection</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <span class="me-2" style="color: gold;">
+              <i class="bi bi-chevron-right"></i>
+            </span>
+            <span>Expanses</span>
+          </a>
+        </li>
+        <li>
+          <a href="addclass.html" class="nav-link">
+            <span class="me-2" style="color: gold;">
+              <i class="bi bi-chevron-right"></i>
+            </span>
+            <span>Add Expanses</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+ </li>
+ <a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample6" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2"  style="color: gold;">
+    <i class="bi bi-pencil-square"></i>
+  </span>
+  <span>Classes</span>
+     <span class="right-icon ms-auto"  style="color: gold;">
+  <i class="bi bi-chevron-down"></i>
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample6">
+  <div>
+    <ul class="navbar-nav ps-3">
+      <li>
+        <a href="allclasses.html" class="nav-link">
+          <span class="me-2"  style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>All Classes</span>
+        </a>
+      </li>
+      <li>
+        <a href="addclass.html" class="nav-link">
+          <span class="me-2"  style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Add New Class</span>
+        </a>
+    </ul>
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample7" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2"  style="color: gold;">
+    <i class="bi bi-journals"></i>
+  </span>
+  <span>Subjects</span>
+     <span class="right-icon ms-auto"  style="color: gold;">
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample7">
+  <div>
+    <ul class="navbar-nav ps-3">
+    </ul>
+  </div>
+</div>
+
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample8" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-archive"></i>
+  </span>
+  <span>Class Routine</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+ </span>
+  
+ </a>
+
+  </a>
+
+<div class="collapse" id="collapseExample8">
+  <div>
+   
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample9" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-card-list"></i>
+  </span>
+  <span>Attendence</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample9">
+  <div>
+  
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample10" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-card-checklist"></i>
+  </span>
+  <span>Exam</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+  <i class="bi bi-chevron-down"></i>
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample10">
+  <div>
+    <ul class="navbar-nav ps-3">
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Exam Schedule</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right" style="color: gold;"></i>
+          </span>
+          <span>Exam Grades</span>
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample11" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-truck"></i>
+  </span>
+  <span>Transport</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample11">
+  <div>
+  
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample12" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-building"></i>
+  </span>
+  <span>Hostel</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+ 
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample12">
+  <div>
+
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample13" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-files"></i>
+
+  </span>
+  <span>Notice</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+
+ </span>
+  
+ </a>
+
+  </a>
+
+<div class="collapse" id="collapseExample13">
+  <div>
+  
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample14" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-chat"></i>
+  </span>
+  <span>Massages</span>
+     <span class="right-icon ms-auto">
+
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample14">
+  <div>
+ 
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample15" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-broadcast-pin"></i>
+  </span>
+  <span>Ul Element</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+  <i class="bi bi-chevron-down" style="color: gold;"></i>
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample15">
+  <div>
+    <ul class="navbar-nav ps-3">
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Alart</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Button</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Grid</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Modals</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Progress Bar</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Tab</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Widget</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample16" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-map"></i>
+  </span>
+  <span>Map</span>
+     <span class="right-icon ms-auto">
+ 
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample16">
+  <div>
+   
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample16" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-person-rolodex"></i>
+  </span>
+  <span>Account</span>
+     <span class="right-icon ms-auto">
+ 
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample16">
+  <div>
+   
+  </div>
+</div>
+</li>
+
+ <!-- Offcanvas -->
+
+
+ <script src="main.js"></script>
+
+ <script src="../javascript files/js/dataTables.bootstrap5.min.js"></script>
+ <script src="../javascript files/js/jquery.dataTables.min.js"></script>
+ 
+ 
+ <script src="../javascript files/js/bootstrap.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ <script
+   src="https://code.jquery.com/jquery-3.6.0.js"
+   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+   crossorigin="anonymous"></script>
+ 
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ 
+ 
+   <script src="https://data.jsdelivr.com/v1/package/npm/chart.js/badge)](https://www.jsdelivr.com/package/npm/chart.js"></script>
+   <script src="https://www.jsdelivr.com/package/npm/chart.js?path=dist"></script>
+ <script src="./script.js"></script>
+ <script src="./cal/app.js"></script>
+ <script src="./public/Dasboard.js"></script>
+        
+</body>
+</html>

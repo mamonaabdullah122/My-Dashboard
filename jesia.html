@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./javascript files/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="./javascript files/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet"type="text/css" href="./cal/calapp.css"> 
+     <link rel="stylesheet" href="./public/Dashboard.css">
+     <link rel="stylesheet" href="datastyle.css">
+     <script src="main.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/css/jquery.dataTables.min.css">
+     <link rel="stylesheet" href="//cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.2/locale/af.min.js" integrity="sha512-lnYINW0FnmQ7QKM2C5b94J7Ev9xp80zvVPs5qY2dImqaUVAyPiGUtZdSks9UsKixpl0G+Vee3Aps3XqOGm4LDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</head>
+<style>
+    body{
+        font-family: cursive;
+        width: 100vw;
+    }
+</style>
+<body>
+     <!-- Navbar -->
+   
+     <nav class="navbar navbar-expand-md navbar-dark bg-dark  fixed-top" >
+        <div class="container-fluid">
+
+     
+    
+   
+          <!-- Offcanvas Trigger -->
+          <button
+           class="navbar-toggler me-2" 
+           type="button"
+            data-bs-toggle="offcanvas"
+             data-bs-target="#offcanvasExample"
+             aria-controls="offcanvasExample">
+            <span class="navbar-toggler-icon"data-bs-target="#offcanvasExample" ></span>
+           
+          </button>
+          <!-- Offcanvas Trigger -->
+        
+          <a class="navbar-brand fw-bold text-uppercase bg-dark" 
+          href="#">Navbar</a>
+          <button 
+          class="navbar-toggler" 
+          type="button" 
+          data-bs-toggle="collapse" 
+          data-bs-target="#navbarSupportedContent" 
+          aria-controls="navbarSupportedContent"
+           aria-expanded="false" 
+           aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div id="collapseExample"></div>
+            <form class="d-flex ms-auto">
+                <div class="input-group my-3 my-lg-0">
+                    <input type="text"
+                     class="form-control" 
+                     placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button 
+                    class="btn btn-primary" 
+                    type="button" 
+                    id="button-addon2"
+                    ><i class="bi bi-search"></i>
+                </button>
+                  </div>
+            </form>
+         <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="bi bi-person-fill"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                 
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+       <div class="container" style="margin-top: 20px;">
+        <div class="card" style="margin-top: 50px; ;">
+        <div class="card-body" style="flex: auto;">
+        <div class="heading-layout1"></div>
+        <div class="single-info-details"></div>
+        <h4>About Me</h4>
+            <h6>Amna</h6>
+
+        
+           
+    <div class="item-content">
+        <div class="header-inline item-header"> 
+            <h3 class="text-dark-medium font-medium"></h3>  
+                <div class="header-elements">
+                    <ul>
+                        <li><a href="#"><i class="bi bi-pencil-square bg-white me-2"></i></a> </a></li>
+                        <li><a href="#"><i class="bi bi-pencil-square bg-white me-2"></i></a> </a></li>
+                        <li><a href="#"><i class="bi bi-pencil-square bg-white me-2"></i></a> </a></li>
+                    </ul>
+                <div class="info-table table-responsive">
+                </div>
+           
+            
+
+          
+            
+            <table class="table text-nowrap table-hover"> 
+                <tbody>
+                    
+                    <tr>
+                        <td>Name:</td>
+                        <td class="font-small text-dark-small">Amna</td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td class="font-small text-dark-small">Female</td>
+                    </tr>
+                    <tr>
+                        <td>Father Name:</td>
+                        <td class="font-small text-dark-small">Abdullah</td>
+                    </tr>
+                    <tr>
+                        <td>Mother Name:</td>
+                        <td class="font-small text-dark-small">Maria</td>
+                    </tr>
+                    <tr>
+                        <td>Date Of Birth:</td>
+                        <td class="font-small text-dark-small">20-july-2016</td>
+                    </tr>
+                    <tr>
+                        <td>Religion:</td>
+                        <td class="font-small text-dark-small">Islam</td>
+                    </tr>
+                    <tr>
+                        <td>Father Occupation:</td>
+                        <td class="font-small text-dark-small">Graphic Designer</td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td class="font-small text-dark-small">Amna@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Admission Date:</td>
+                        <td class="font-small text-dark-small">07.08.2019</td>
+                    </tr>
+                    <tr>
+                        <td>Class:</td>
+                        <td class="font-small text-dark-small">1</td>
+                    </tr>
+                    <tr>
+                        <td>Section:</td>
+                        <td class="font-small text-dark-small">Maryam</td>
+                    </tr>
+                    <tr>
+                        <td>Roll:</td>
+                        <td class="font-small text-dark-small">1054</td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td class="font-small text-dark-small">12345</td>
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td class="font-small text-dark-small">03216675036</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            </div>
+            </div> 
+        </div>
+       
+        </div>
+            </div>
+        </div>
+        </h6>
+
+     
+      <!-- Jesia.html -->
+
+     
+    <!-- <div class="container" style="margin-top: 20px;">
+        <div class="card" style="margin-top: 50px; ;">
+        <div class="card-body" style="flex: auto;">
+        <div class="heading-layout1"></div>
+        <div class="single-info-details"></div>
+        <h4>About Me</h4>
+            <h6>Amna</h6>
+
+        
+           
+    <div class="item-content">
+        <div class="header-inline item-header"> 
+            <h3 class="text-dark-medium font-medium"></h3>  
+                <div class="header-elements">
+                    <ul>
+                        <li><a href="#"><i class="bi bi-pencil-square bg-white me-2"></i></a> </a></li>
+                        <li><a href="#"><i class="bi bi-pencil-square bg-white me-2"></i></a> </a></li>
+                        <li><a href="#"><i class="bi bi-pencil-square bg-white me-2"></i></a> </a></li>
+                    </ul>
+                <div class="info-table table-responsive">
+                </div>
+           
+            
+
+          
+            
+            <table class="table text-nowrap table-hover"> 
+                <tbody>
+                    
+                    <tr>
+                        <td>Name:</td>
+                        <td class="font-small text-dark-small">Amna</td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td class="font-small text-dark-small">Female</td>
+                    </tr>
+                    <tr>
+                        <td>Father Name:</td>
+                        <td class="font-small text-dark-small">Abdullah</td>
+                    </tr>
+                    <tr>
+                        <td>Mother Name:</td>
+                        <td class="font-small text-dark-small">Maria</td>
+                    </tr>
+                    <tr>
+                        <td>Date Of Birth:</td>
+                        <td class="font-small text-dark-small">20-july-2016</td>
+                    </tr>
+                    <tr>
+                        <td>Religion:</td>
+                        <td class="font-small text-dark-small">Islam</td>
+                    </tr>
+                    <tr>
+                        <td>Father Occupation:</td>
+                        <td class="font-small text-dark-small">Graphic Designer</td>
+                    </tr>
+                    <tr>
+                        <td>E-mail:</td>
+                        <td class="font-small text-dark-small">Amna@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>Admission Date:</td>
+                        <td class="font-small text-dark-small">07.08.2019</td>
+                    </tr>
+                    <tr>
+                        <td>Class:</td>
+                        <td class="font-small text-dark-small">1</td>
+                    </tr>
+                    <tr>
+                        <td>Section:</td>
+                        <td class="font-small text-dark-small">Maryam</td>
+                    </tr>
+                    <tr>
+                        <td>Roll:</td>
+                        <td class="font-small text-dark-small">1054</td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td class="font-small text-dark-small">12345</td>
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td class="font-small text-dark-small">03216675036</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            </div>
+            </div> 
+        </div>
+       
+        </div>
+            </div>
+        </div>
+        </h6> -->
+
+    <!-- Navbar -->
+      <!-- Offcanvas -->
+      <div class="offcanvas offcanvas-start bg-dark text-white sidebar-nav"
+       tabindex="-1" 
+       id="offcanvasExample"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-body p-0">
+          <nav class="navbar-dark">
+         <ul class="navbar-nav">
+          <li>
+          
+           <li>
+          
+            <a href="#" class="nav-link px-3 active">
+             
+              <a class="nav-link px-3 sidebar-link"
+              data-bs-toggle="collapse"
+               href="#collapseExample" 
+               role="button" 
+               aria-expanded="false"
+               aria-controls="collapseExample">
+               <span class="me-2" style="color: gold;">
+                <i class="bi bi-speedometer2"></i>
+              </span>
+              <span>Dashboard</span>
+                 <span class="right-icon ms-auto" style="color: gold;">
+              <i class="bi bi-chevron-down"></i>
+             </span>
+              
+             </a>
+          
+              </a>
+            <p>
+            </p>
+            <div class="collapse" id="collapseExample">
+              <div>
+                <ul class="navbar-nav ps-3">
+                  <li>
+                    <a href="#" class="nav-link">
+                      <span class="me-2" style="color: gold;">
+                        <i class="bi bi-chevron-right"></i>
+                      </span>
+                      <span>Admin</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">
+                      <span class="me-2" style="color: gold;">
+                        <i class="bi bi-chevron-right"></i>
+                      </span>
+                      <span>Students</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">
+                      <span class="me-2" style="color: gold;">
+                        <i class="bi bi-chevron-right"></i>
+                      </span>
+                      <span>Parrents</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="nav-link">
+                      <span class="me-2" style="color: gold;">
+                        <i class="bi bi-chevron-right"></i>
+                      </span>
+                      <span>Teachers</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+           </li>
+           <a href="#" class="nav-link px-3 active">
+             
+            <a class="nav-link px-3 sidebar-link"
+            data-bs-toggle="collapse"
+             href="#collapseExample1" 
+             role="button" 
+             aria-expanded="false"
+             aria-controls="collapseExample">
+             <span class="me-2" style="color: gold;">
+              <i class="bi bi-people-fill"></i>
+            </span>
+            <span>Students</span>
+               <span class="right-icon ms-auto" style="color: gold;">
+            <i class="bi bi-chevron-down"></i>
+           </span>
+            
+           </a>
+        
+            </a>
+          <p>
+          </p>
+          <div class="collapse" id="collapseExample1">
+            <div>
+              <ul class="navbar-nav ps-3">
+                <li>
+                  <a href="allstudentstable.html" class="nav-link">
+                    <span class="me-2" style="color: gold;">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                    <span>All Students</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="studentdetail.html" class="nav-link">
+                    <span class="me-2" style="color: gold;">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                    <span>Students Details</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="admisionform.html" class="nav-link">
+                    <span class="me-2" style="color: gold;">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                    <span>Admision Form</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="nav-link">
+                    <span class="me-2" style="color: gold;">
+                      <i class="bi bi-chevron-right"></i>
+                    </span>
+                    <span>Student Permotion</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+         </li>
+         <a href="#" class="nav-link px-3 active">
+             
+          <a class="nav-link px-3 sidebar-link"
+          data-bs-toggle="collapse"
+           href="#collapseExample2" 
+           role="button" 
+           aria-expanded="false"
+           aria-controls="collapseExample">
+           <span class="me-2" style="color: gold;">
+            <i class="bi bi-person-circle"></i>
+          </span>
+          <span>Teachers</span>
+             <span class="right-icon ms-auto" style="color: gold;">
+          <i class="bi bi-chevron-down"></i>
+         </span>
+          
+         </a>
+      
+          </a>
+        <p>
+        </p>
+        <div class="collapse" id="collapseExample2">
+          <div>
+            <ul class="navbar-nav ps-3">
+              <li>
+                <a href="allteachers.html" class="nav-link">
+                  <span class="me-2" style="color: gold;">
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <span>All Teachers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <span class="me-2" style="color: gold;">
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <span>Teachers Details</span>
+                </a>
+              </li>
+              <li>
+                <a href="addclass.html" class="nav-link">
+                  <span class="me-2" style="color: gold;">
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <span>Add Teachers</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link">
+                  <span class="me-2" style="color: gold;">
+                    <i class="bi bi-chevron-right"></i>
+                  </span>
+                  <span>Payment</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+       </li>
+       <a href="#" class="nav-link px-3 active">
+             
+        <a class="nav-link px-3 sidebar-link"
+        data-bs-toggle="collapse"
+         href="#collapseExample3" 
+         role="button" 
+         aria-expanded="false"
+         aria-controls="collapseExample">
+         <span class="me-2" style="color: gold;">
+          <i class="bi bi-person"></i>
+        </span>
+        <span>Parents</span>
+           <span class="right-icon ms-auto" style="color: gold;">
+        <i class="bi bi-chevron-down"></i>
+       </span>
+        
+       </a>
+    
+        </a>
+      <p>
+      </p>
+      <div class="collapse" id="collapseExample3">
+        <div>
+          <ul class="navbar-nav ps-3">
+            <li>
+              <a href="allparents.html" class="nav-link">
+                <span class="me-2" style="color: gold;">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+                <span>All Parents</span>
+              </a>
+            </li>
+            <li>
+              <a href="admisionform.html" class="nav-link">
+                <span class="me-2" style="color: gold;">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+                <span>Parents Details</span>
+              </a>
+            </li>
+            <li>
+              <a href="addclass.html" class="nav-link">
+                <span class="me-2" style="color: gold;">
+                  <i class="bi bi-chevron-right"></i>
+                </span>
+                <span>Add Parents</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+     </li>
+     <a href="#" class="nav-link px-3 active">
+             
+      <a class="nav-link px-3 sidebar-link"
+      data-bs-toggle="collapse"
+       href="#collapseExample4" 
+       role="button" 
+       aria-expanded="false"
+       aria-controls="collapseExample">
+       <span class="me-2"  style="color: gold;">
+        <i class="bi bi-book"></i>
+      </span>
+      <span>Library</span>
+         <span class="right-icon ms-auto"  style="color: gold;">
+      <i class="bi bi-chevron-down"></i>
+     </span>
+      
+     </a>
+  
+      </a>
+    <p>
+    </p>
+    <div class="collapse" id="collapseExample4">
+      <div>
+        <ul class="navbar-nav ps-3">
+          <li>
+            <a href="allbooks.html" class="nav-link">
+              <span class="me-2"  style="color: gold;">
+                <i class="bi bi-chevron-right"></i>
+              </span>
+              <span>All Books</span>
+            </a>
+          </li>
+          <li>
+            <a href="addclass.html" class="nav-link">
+              <span class="me-2"  style="color: gold;">
+                <i class="bi bi-chevron-right"></i>
+              </span>
+              <span>Add New Books</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+   </li>
+   <a href="#" class="nav-link px-3 active">
+             
+    <a class="nav-link px-3 sidebar-link"
+    data-bs-toggle="collapse"
+     href="#collapseExample5" 
+     role="button" 
+     aria-expanded="false"
+     aria-controls="collapseExample">
+     <span class="me-2" style="color: gold;">
+      <i class="bi bi-calculator"></i>
+    </span>
+    <span>Account</span>
+       <span class="right-icon ms-auto" style="color: gold;">
+    <i class="bi bi-chevron-down"></i>
+   </span>
+    
+   </a>
+
+    </a>
+  <p>
+  </p>
+  <div class="collapse" id="collapseExample5">
+    <div>
+      <ul class="navbar-nav ps-3">
+        <li>
+          <a href="account.html" class="nav-link">
+            <span class="me-2" style="color: gold;">
+              <i class="bi bi-chevron-right"></i>
+            </span>
+            <span>All Fee Collection</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-link">
+            <span class="me-2" style="color: gold;">
+              <i class="bi bi-chevron-right"></i>
+            </span>
+            <span>Expanses</span>
+          </a>
+        </li>
+        <li>
+          <a href="addclass.html" class="nav-link">
+            <span class="me-2" style="color: gold;">
+              <i class="bi bi-chevron-right"></i>
+            </span>
+            <span>Add Expanses</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+ </li>
+ <a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample6" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2"  style="color: gold;">
+    <i class="bi bi-pencil-square"></i>
+  </span>
+  <span>Classes</span>
+     <span class="right-icon ms-auto"  style="color: gold;">
+  <i class="bi bi-chevron-down"></i>
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample6">
+  <div>
+    <ul class="navbar-nav ps-3">
+      <li>
+        <a href="allclasses.html" class="nav-link">
+          <span class="me-2"  style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>All Classes</span>
+        </a>
+      </li>
+      <li>
+        <a href="addclass.html" class="nav-link">
+          <span class="me-2"  style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Add New Class</span>
+        </a>
+    </ul>
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample7" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2"  style="color: gold;">
+    <i class="bi bi-journals"></i>
+  </span>
+  <span>Subjects</span>
+     <span class="right-icon ms-auto"  style="color: gold;">
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample7">
+  <div>
+    <ul class="navbar-nav ps-3">
+    </ul>
+  </div>
+</div>
+
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample8" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-archive"></i>
+  </span>
+  <span>Class Routine</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+ </span>
+  
+ </a>
+
+  </a>
+
+<div class="collapse" id="collapseExample8">
+  <div>
+   
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample9" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-card-list"></i>
+  </span>
+  <span>Attendence</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample9">
+  <div>
+  
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample10" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-card-checklist"></i>
+  </span>
+  <span>Exam</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+  <i class="bi bi-chevron-down"></i>
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample10">
+  <div>
+    <ul class="navbar-nav ps-3">
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Exam Schedule</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right" style="color: gold;"></i>
+          </span>
+          <span>Exam Grades</span>
+        </a>
+      </li>
+    
+    </ul>
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample11" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-truck"></i>
+  </span>
+  <span>Transport</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample11">
+  <div>
+  
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample12" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-building"></i>
+  </span>
+  <span>Hostel</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+ 
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample12">
+  <div>
+
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample13" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-files"></i>
+
+  </span>
+  <span>Notice</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+
+ </span>
+  
+ </a>
+
+  </a>
+
+<div class="collapse" id="collapseExample13">
+  <div>
+  
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample14" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-chat"></i>
+  </span>
+  <span>Massages</span>
+     <span class="right-icon ms-auto">
+
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample14">
+  <div>
+ 
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample15" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-broadcast-pin"></i>
+  </span>
+  <span>Ul Element</span>
+     <span class="right-icon ms-auto" style="color: gold;">
+  <i class="bi bi-chevron-down" style="color: gold;"></i>
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample15">
+  <div>
+    <ul class="navbar-nav ps-3">
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Alart</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Button</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Grid</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Modals</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Progress Bar</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Tab</span>
+        </a>
+        <a href="#" class="nav-link">
+          <span class="me-2" style="color: gold;">
+            <i class="bi bi-chevron-right"></i>
+          </span>
+          <span>Widget</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample16" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-map"></i>
+  </span>
+  <span>Map</span>
+     <span class="right-icon ms-auto">
+ 
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample16">
+  <div>
+   
+  </div>
+</div>
+</li>
+<a href="#" class="nav-link px-3 active">
+             
+  <a class="nav-link px-3 sidebar-link"
+  data-bs-toggle="collapse"
+   href="#collapseExample16" 
+   role="button" 
+   aria-expanded="false"
+   aria-controls="collapseExample">
+   <span class="me-2" style="color: gold;">
+    <i class="bi bi-person-rolodex"></i>
+  </span>
+  <span>Account</span>
+     <span class="right-icon ms-auto">
+ 
+ </span>
+  
+ </a>
+
+  </a>
+<p>
+</p>
+<div class="collapse" id="collapseExample16">
+  <div>
+   
+  </div>
+</div>
+</li>
+
+ <!-- Offcanvas -->
+
+ <script src="main.js"></script>
+
+ <script src="../javascript files/js/dataTables.bootstrap5.min.js"></script>
+ <script src="../javascript files/js/jquery.dataTables.min.js"></script>
+ 
+ 
+ <script src="../javascript files/js/bootstrap.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+ <script
+   src="https://code.jquery.com/jquery-3.6.0.js"
+   integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+   crossorigin="anonymous"></script>
+ 
+   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ 
+ 
+   <script src="https://data.jsdelivr.com/v1/package/npm/chart.js/badge)](https://www.jsdelivr.com/package/npm/chart.js"></script>
+   <script src="https://www.jsdelivr.com/package/npm/chart.js?path=dist"></script>
+ <script src="./script.js"></script>
+ <script src="./cal/app.js"></script>
+ <script src="./public/Dasboard.js"></script>
+
+</body>
+</html>

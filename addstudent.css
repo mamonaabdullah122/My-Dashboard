@@ -1,0 +1,59 @@
+body{
+    font-family: cursive;
+}
+#inputEmail4{
+    margin-left: 10px;
+}
+#inputPassword4{
+    margin-left: 10px;
+}
+#inputAddress{
+    margin-left: 10px;
+}
+#inputAddress2{
+    margin-left: 10px;
+}
+#inputCity{
+    margin-left: 10px;
+}
+#inputState{
+    margin-left: 10px;
+}
+#inputZip{
+    margin-left: 10px;
+}
+#gridCheck{
+    margin-left: 10px;
+}
+#submit{
+    margin-left: 10px;
+}
+#Email{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#Password{
+    margin-top: 10px;
+}
+#Address{
+ margin-top: 10px;
+}
+#City{
+    margin-top: 10px;
+}
+#State{
+    margin-top: 10px;
+}
+#Address2{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#Zip{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#card{
+    margin-left: 500px;
+    margin-top: 100px;
+ 
+}
